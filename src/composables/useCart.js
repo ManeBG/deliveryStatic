@@ -23,7 +23,8 @@ export function useCart() {
    * Agrega un item al carrito.
    * Si la variante ya existe, incrementa la cantidad.
    * @param {Object} product  - producto completo
-   * @param {Object} variant  - variante seleccionada { id, label, price, weight }
+   * @param {Object} variant  - { id, label, precio_web } para variable
+   *                           | { id, label, price }    para simple (normalizado en ProductCard)
    */
   function addItem(product, variant) {
     const existing = state.items.find(i => i.variantId === variant.id)
@@ -31,12 +32,12 @@ export function useCart() {
       existing.qty++
     } else {
       state.items.push({
-        productId:   product.id,
-        variantId:   variant.id,
-        name:        product.name,
+        productId:    product.id,
+        variantId:    variant.id,
+        name:         product.name,
         variantLabel: variant.label,
-        price:       variant.price,
-        qty:         1
+        price:        variant.precio_web ?? variant.price,  // variable → precio_web | simple → price
+        qty:          1
       })
     }
   }

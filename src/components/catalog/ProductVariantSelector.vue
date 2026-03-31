@@ -9,7 +9,7 @@
       @click="$emit('update:modelValue', variant.id)"
     >
       {{ variant.label }}
-      <span class="ms-1 fw-bold">${{ variant.price }}</span>
+      <span class="ms-1 fw-bold">${{ variant.precio_web }}</span>
     </button>
   </div>
 </template>
