@@ -1,0 +1,406 @@
+{
+  "meta": {
+    "storeName": "Miscelánea García",
+    "storeSlogan": "Frescura y sabor directo a tu mesa",
+    "city": "Atoyac de Álvarez, Guerrero",
+    "currency": "MXN",
+    "whatsappNumber": "527411234567",
+    "minimumOrder": 100,
+    "freeShippingThreshold": 320,
+    "deliveryOptions": {
+      "pickup":  { "label": "Recoger en tienda",   "cost": 0  },
+      "local":   { "label": "Domicilio en Atoyac", "cost": 30 },
+      "outside": { "label": "Fuera de Atoyac",     "cost": 50 }
+    }
+  },
+  "categories": [
+    { "id": "carnes",           "label": "Carnes",              "icon": "🥩" },
+    { "id": "bebidas",          "label": "Bebidas",             "icon": "🥤" },
+    { "id": "botanas",          "label": "Botanas",             "icon": "🍿" },
+    { "id": "galletas_y_dulces","label": "Galletas y Dulces",   "icon": "🍬" },
+    { "id": "lacteos",          "label": "Lácteos",             "icon": "🥛" },
+    { "id": "farmacia_higiene", "label": "Farmacia e Higiene",  "icon": "💊" }
+  ],
+  "products": [
+
+    {
+      "id": "chorizo-001",
+      "type": "variable",
+      "categoryId": "carnes",
+      "name": "Chorizo",
+      "description": "Chorizo rojo artesanal, ideal para tacos y guisados.",
+      "image": "/images/chorizo.webp",
+      "available": true,
+      "variants": [
+        { "id": "chorizo-500g", "label": "½ Kilo", "weight": 500,  "price": 75  },
+        { "id": "chorizo-1kg",  "label": "1 Kilo",  "weight": 1000, "price": 140 }
+      ]
+    },
+    {
+      "id": "cecina-001",
+      "type": "variable",
+      "categoryId": "carnes",
+      "name": "Cecina",
+      "description": "Cecina enchilada o natural, corte fino tradicional.",
+      "image": "/images/cecina.webp",
+      "available": true,
+      "variants": [
+        { "id": "cecina-500g", "label": "½ Kilo", "weight": 500,  "price": 90  },
+        { "id": "cecina-1kg",  "label": "1 Kilo",  "weight": 1000, "price": 175 }
+      ]
+    },
+    {
+      "id": "enchilada-001",
+      "type": "variable",
+      "categoryId": "carnes",
+      "name": "Carne Enchilada",
+      "description": "Carne marinada con chile rojo, lista para asar o freír.",
+      "image": "/images/enchilada.webp",
+      "available": true,
+      "variants": [
+        { "id": "enchilada-500g", "label": "½ Kilo", "weight": 500,  "price": 85  },
+        { "id": "enchilada-1kg",  "label": "1 Kilo",  "weight": 1000, "price": 165 }
+      ]
+    },
+    {
+      "id": "bistec-001",
+      "type": "variable",
+      "categoryId": "carnes",
+      "name": "Bistec de Res",
+      "description": "Bistec de res tierno, perfecto para asar o en salsa.",
+      "image": "/images/bistec.webp",
+      "available": true,
+      "variants": [
+        { "id": "bistec-500g", "label": "½ Kilo", "weight": 500,  "price": 100 },
+        { "id": "bistec-1kg",  "label": "1 Kilo",  "weight": 1000, "price": 195 }
+      ]
+    },
+    {
+      "id": "chuletas-001",
+      "type": "variable",
+      "categoryId": "carnes",
+      "name": "Chuletas de Cerdo",
+      "description": "Chuletas de cerdo frescas, perfectas para asar o freír.",
+      "image": "/images/chuletas.webp",
+      "available": true,
+      "variants": [
+        { "id": "chuletas-500g", "label": "½ Kilo", "weight": 500,  "price": 70  },
+        { "id": "chuletas-1kg",  "label": "1 Kilo",  "weight": 1000, "price": 135 }
+      ]
+    },
+
+    {
+      "id": "coca-600-001",
+      "type": "simple",
+      "categoryId": "bebidas",
+      "name": "Coca-Cola 600 ml",
+      "description": "Refresco Coca-Cola botella de 600 ml, bien fría.",
+      "image": "/images/coca600.webp",
+      "available": true,
+      "precio_tienda": 14,
+      "precio_web": 15
+    },
+    {
+      "id": "agua-ciel-001",
+      "type": "simple",
+      "categoryId": "bebidas",
+      "name": "Agua Ciel 1 L",
+      "description": "Agua purificada Ciel, botella de 1 litro.",
+      "image": "/images/agua-ciel.webp",
+      "available": true,
+      "precio_tienda": 12,
+      "precio_web": 13
+    },
+    {
+      "id": "jumex-mango-001",
+      "type": "simple",
+      "categoryId": "bebidas",
+      "name": "Jugo Jumex Mango 500 ml",
+      "description": "Jugo de mango Jumex, presentación de 500 ml.",
+      "image": "/images/jumex-mango.webp",
+      "available": true,
+      "precio_tienda": 16,
+      "precio_web": 17
+    },
+    {
+      "id": "boing-tamarindo-001",
+      "type": "simple",
+      "categoryId": "bebidas",
+      "name": "Boing! Tamarindo 335 ml",
+      "description": "Refresco Boing! sabor tamarindo, lata de 335 ml.",
+      "image": "/images/boing-tamarindo.webp",
+      "available": true,
+      "precio_tienda": 13,
+      "precio_web": 14
+    },
+    {
+      "id": "electrolit-001",
+      "type": "simple",
+      "categoryId": "bebidas",
+      "name": "Electrolit Toronja 625 ml",
+      "description": "Suero hidratante sabor toronja, botella 625 ml.",
+      "image": "/images/electrolit.webp",
+      "available": true,
+      "precio_tienda": 30,
+      "precio_web": 32
+    },
+    {
+      "id": "cafe-nescafe-001",
+      "type": "simple",
+      "categoryId": "bebidas",
+      "name": "Nescafé Clásico 50 g",
+      "description": "Café soluble Nescafé clásico, frasco de 50 g.",
+      "image": "/images/nescafe.webp",
+      "available": true,
+      "precio_tienda": 48,
+      "precio_web": 50
+    },
+
+    {
+      "id": "sabritas-001",
+      "type": "simple",
+      "categoryId": "botanas",
+      "name": "Sabritas Original 45 g",
+      "description": "Papas fritas Sabritas sabor original, bolsa familiar.",
+      "image": "/images/sabritas.webp",
+      "available": true,
+      "precio_tienda": 18,
+      "precio_web": 20
+    },
+    {
+      "id": "doritos-001",
+      "type": "simple",
+      "categoryId": "botanas",
+      "name": "Doritos Nacho 50 g",
+      "description": "Tostadas de maíz Doritos sabor nacho queso.",
+      "image": "/images/doritos.webp",
+      "available": true,
+      "precio_tienda": 20,
+      "precio_web": 22
+    },
+    {
+      "id": "ruffles-001",
+      "type": "simple",
+      "categoryId": "botanas",
+      "name": "Ruffles Queso 45 g",
+      "description": "Papas onduladas Ruffles con queso, bolsa mediana.",
+      "image": "/images/ruffles.webp",
+      "available": true,
+      "precio_tienda": 18,
+      "precio_web": 20
+    },
+    {
+      "id": "cacahuates-001",
+      "type": "simple",
+      "categoryId": "botanas",
+      "name": "Cacahuates Japoneses 200 g",
+      "description": "Cacahuates estilo japonés, bolsa de 200 g.",
+      "image": "/images/cacahuates.webp",
+      "available": true,
+      "precio_tienda": 22,
+      "precio_web": 24
+    },
+    {
+      "id": "chicharrones-001",
+      "type": "simple",
+      "categoryId": "botanas",
+      "name": "Chicharrón Barcel 55 g",
+      "description": "Chicharrón de cerdo inflado Barcel, bolsa grande.",
+      "image": "/images/chicharron.webp",
+      "available": true,
+      "precio_tienda": 16,
+      "precio_web": 18
+    },
+    {
+      "id": "palomitas-001",
+      "type": "simple",
+      "categoryId": "botanas",
+      "name": "Palomitas Popcorners 42 g",
+      "description": "Palomitas horneadas Popcorners sabor queso blanco.",
+      "image": "/images/palomitas.webp",
+      "available": true,
+      "precio_tienda": 24,
+      "precio_web": 26
+    },
+
+    {
+      "id": "marias-001",
+      "type": "simple",
+      "categoryId": "galletas_y_dulces",
+      "name": "Galletas Marías Gamesa 200 g",
+      "description": "Galletas Marías clásicas, paquete de 200 g.",
+      "image": "/images/marias.webp",
+      "available": true,
+      "precio_tienda": 22,
+      "precio_web": 24
+    },
+    {
+      "id": "oreo-001",
+      "type": "simple",
+      "categoryId": "galletas_y_dulces",
+      "name": "Galletas Oreo 119 g",
+      "description": "Galletas de chocolate con crema Oreo, paquete 3 porciones.",
+      "image": "/images/oreo.webp",
+      "available": true,
+      "precio_tienda": 28,
+      "precio_web": 30
+    },
+    {
+      "id": "chocorroles-001",
+      "type": "simple",
+      "categoryId": "galletas_y_dulces",
+      "name": "Chocorroles Marinela 6 pzas",
+      "description": "Pastelitos de chocolate con crema, paquete de 6 piezas.",
+      "image": "/images/chocorroles.webp",
+      "available": true,
+      "precio_tienda": 26,
+      "precio_web": 28
+    },
+    {
+      "id": "mazapan-001",
+      "type": "simple",
+      "categoryId": "galletas_y_dulces",
+      "name": "Mazapán De la Rosa",
+      "description": "Dulce de cacahuate mazapán, pieza individual.",
+      "image": "/images/mazapan.webp",
+      "available": true,
+      "precio_tienda": 5,
+      "precio_web": 6
+    },
+    {
+      "id": "pulparindo-001",
+      "type": "simple",
+      "categoryId": "galletas_y_dulces",
+      "name": "Pulparindo Extra Picante 20 g",
+      "description": "Dulce de tamarindo con chile y sal, bolsita individual.",
+      "image": "/images/pulparindo.webp",
+      "available": true,
+      "precio_tienda": 6,
+      "precio_web": 7
+    },
+
+    {
+      "id": "leche-lala-001",
+      "type": "simple",
+      "categoryId": "lacteos",
+      "name": "Leche Lala Entera 1 L",
+      "description": "Leche entera Lala, caja de 1 litro larga vida.",
+      "image": "/images/leche-lala.webp",
+      "available": true,
+      "precio_tienda": 22,
+      "precio_web": 24
+    },
+    {
+      "id": "yogurt-yoplait-001",
+      "type": "simple",
+      "categoryId": "lacteos",
+      "name": "Yogurt Yoplait Fresa 220 g",
+      "description": "Yogurt natural con fresa Yoplait, vaso individual.",
+      "image": "/images/yogurt-yoplait.webp",
+      "available": true,
+      "precio_tienda": 16,
+      "precio_web": 18
+    },
+    {
+      "id": "queso-oaxaca-001",
+      "type": "simple",
+      "categoryId": "lacteos",
+      "name": "Queso Oaxaca 400 g",
+      "description": "Queso Oaxaca en hebras, bola de 400 g, ideal para quesadillas.",
+      "image": "/images/queso-oaxaca.webp",
+      "available": true,
+      "precio_tienda": 60,
+      "precio_web": 65
+    },
+    {
+      "id": "crema-lala-001",
+      "type": "simple",
+      "categoryId": "lacteos",
+      "name": "Crema Ácida Lala 200 ml",
+      "description": "Crema ácida Lala, vaso de 200 ml para acompañar antojitos.",
+      "image": "/images/crema-lala.webp",
+      "available": true,
+      "precio_tienda": 22,
+      "precio_web": 24
+    },
+    {
+      "id": "mantequilla-001",
+      "type": "simple",
+      "categoryId": "lacteos",
+      "name": "Mantequilla Lala 90 g",
+      "description": "Mantequilla con sal Lala, barrita de 90 g.",
+      "image": "/images/mantequilla.webp",
+      "available": true,
+      "precio_tienda": 24,
+      "precio_web": 26
+    },
+
+    {
+      "id": "aspirina-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Aspirina 500 mg 10 tab",
+      "description": "Ácido acetilsalicílico 500 mg, caja de 10 tabletas.",
+      "image": "/images/aspirina.webp",
+      "available": true,
+      "precio_tienda": 18,
+      "precio_web": 20
+    },
+    {
+      "id": "paracetamol-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Paracetamol 500 mg 10 tab",
+      "description": "Analgésico y antipirético, caja de 10 tabletas.",
+      "image": "/images/paracetamol.webp",
+      "available": true,
+      "precio_tienda": 16,
+      "precio_web": 18
+    },
+    {
+      "id": "shampoo-pantene-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Shampoo Pantene 200 ml",
+      "description": "Shampoo Pantene Pro-V para cabello normal, botella 200 ml.",
+      "image": "/images/shampoo-pantene.webp",
+      "available": true,
+      "precio_tienda": 55,
+      "precio_web": 58
+    },
+    {
+      "id": "jabon-zote-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Jabón Zote Rosa 400 g",
+      "description": "Jabón de lavandería Zote rosa, barra de 400 g.",
+      "image": "/images/jabon-zote.webp",
+      "available": true,
+      "precio_tienda": 18,
+      "precio_web": 20
+    },
+    {
+      "id": "papel-higienico-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Papel Higiénico Regio 4 rollos",
+      "description": "Papel higiénico Regio doble hoja, paquete de 4 rollos.",
+      "image": "/images/papel-regio.webp",
+      "available": true,
+      "precio_tienda": 32,
+      "precio_web": 35
+    },
+    {
+      "id": "cubrebocas-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Cubrebocas Quirúrgico 10 pzas",
+      "description": "Mascarilla desechable tricapa, paquete de 10 piezas.",
+      "image": "/images/cubrebocas.webp",
+      "available": true,
+      "precio_tienda": 25,
+      "precio_web": 28
+    }
+
+  ]
+}

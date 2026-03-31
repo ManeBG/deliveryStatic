@@ -1,0 +1,117 @@
+/* =========================================
+   Miscelánea García – Design System
+   ========================================= */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+/* ── Custom Properties ── */
+:root {
+  --mg-red:        #C0392B;
+  --mg-red-dark:   #962d22;
+  --mg-red-light:  #f8d7da;
+  --mg-amber:      #E67E22;
+  --mg-amber-light:#fef3e2;
+  --mg-dark:       #1a1a1a;
+  --mg-gray:       #6c757d;
+  --mg-surface:    #fafafa;
+  --mg-white:      #ffffff;
+
+  --mg-font-body:  'Inter', sans-serif;
+  --mg-font-title: 'Playfair Display', serif;
+
+  --mg-radius:     12px;
+  --mg-shadow:     0 2px 16px rgba(0,0,0,0.08);
+  --mg-shadow-lg:  0 8px 32px rgba(0,0,0,0.12);
+
+  --mg-transition: all 0.2s ease;
+}
+
+/* ── Base Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--mg-font-body);
+  background-color: var(--mg-surface);
+  color: var(--mg-dark);
+  min-height: 100dvh;
+}
+
+/* ── Bootstrap Overrides ── */
+.btn-primary {
+  background-color: var(--mg-red);
+  border-color: var(--mg-red);
+  font-weight: 600;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--mg-red-dark);
+  border-color: var(--mg-red-dark);
+}
+
+.btn-outline-primary {
+  color: var(--mg-red);
+  border-color: var(--mg-red);
+}
+.btn-outline-primary:hover {
+  background-color: var(--mg-red);
+  border-color: var(--mg-red);
+}
+
+/* ── Utility Classes ── */
+.text-brand    { color: var(--mg-red); }
+.bg-brand      { background-color: var(--mg-red); }
+.bg-brand-soft { background-color: var(--mg-red-light); }
+
+.card-mg {
+  border: none;
+  border-radius: var(--mg-radius);
+  box-shadow: var(--mg-shadow);
+  transition: var(--mg-transition);
+}
+.card-mg:hover {
+  box-shadow: var(--mg-shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* ── Badge ── */
+.cart-badge {
+  font-size: 0.65rem;
+  padding: 3px 6px;
+  border-radius: 50%;
+  background-color: var(--mg-amber);
+  color: white;
+  font-weight: 700;
+}
+
+/* ── WhatsApp CTA ── */
+.btn-whatsapp {
+  background-color: #25D366;
+  border-color: #25D366;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.btn-whatsapp:hover {
+  background-color: #1ebe5c;
+  border-color: #1ebe5c;
+  color: #fff;
+}
+
+/* ── Animations ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.35s ease forwards;
+}
