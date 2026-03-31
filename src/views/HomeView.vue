@@ -46,6 +46,48 @@
     <CatalogGrid :filterBy="activeFilter" />
   </div>
 
+  <!-- ===== Cómo pedir ===== -->
+  <div class="how-to-order py-5 border-top">
+    <div class="container">
+      <h2 class="h5 fw-bold text-center mb-4">¿Cómo pedir?</h2>
+      <div class="row g-3 justify-content-center text-center">
+
+        <div class="col-6 col-md-3">
+          <div class="step-card p-3 rounded-3 h-100">
+            <div class="step-icon mb-2">🛒</div>
+            <div class="step-number small text-muted fw-semibold mb-1">Paso 1</div>
+            <p class="small fw-semibold mb-0">Agrega productos al carrito</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="step-card p-3 rounded-3 h-100">
+            <div class="step-icon mb-2">📋</div>
+            <div class="step-number small text-muted fw-semibold mb-1">Paso 2</div>
+            <p class="small fw-semibold mb-0">Completa tus datos</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="step-card p-3 rounded-3 h-100">
+            <div class="step-icon mb-2">💬</div>
+            <div class="step-number small text-muted fw-semibold mb-1">Paso 3</div>
+            <p class="small fw-semibold mb-0">Confirma por WhatsApp</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="step-card p-3 rounded-3 h-100">
+            <div class="step-icon mb-2">🏠</div>
+            <div class="step-number small text-muted fw-semibold mb-1">Paso 4</div>
+            <p class="small fw-semibold mb-0">Recibe en casa o recoge en tienda</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <!-- ===== Secciones informativas ===== -->
   <div class="info-sections bg-light border-top py-5">
     <div class="container">
@@ -177,5 +219,20 @@ const productCountByCategory = computed(() =>
 }
 .filter-btn.active {
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Tarjetas de pasos "Cómo pedir" */
+.step-card {
+  background: #fff8f5;
+  border: 1px solid #f5e0da;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.step-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.step-icon {
+  font-size: 2rem;
+  line-height: 1;
 }
 </style>

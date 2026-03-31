@@ -3,7 +3,7 @@
     <div class="container">
       <!-- Logo + Nombre -->
       <RouterLink to="/" class="navbar-brand d-flex align-items-center gap-2 text-decoration-none">
-        <span class="fs-2">🛍️</span>
+        <span class="fs-2">🏪</span>
         <div class="lh-1">
           <span class="fw-bold text-brand d-block" style="font-family: var(--mg-font-title); font-size: 1.15rem;">
             Miscelánea García
