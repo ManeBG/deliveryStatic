@@ -52,6 +52,11 @@
       "id": "farmacia_higiene",
       "label": "Farmacia e Higiene",
       "icon": "💊"
+    },
+    {
+      "id": "basicos_hogar",
+      "label": "Básicos del Hogar",
+      "icon": "🧺"
     }
   ],
   "products": [
@@ -61,7 +66,7 @@
       "categoryId": "carnes",
       "name": "Chorizo",
       "description": "Chorizo rojo artesanal, ideal para tacos y guisados.",
-      "image": "/images/chorizo.webp",
+      "image": "/images/carnes/chorizo.png",
       "available": true,
       "variants": [
         {
@@ -86,22 +91,22 @@
       "categoryId": "carnes",
       "name": "Cecina",
       "description": "Cecina enchilada o natural, corte fino tradicional.",
-      "image": "/images/cecina.webp",
+      "image": "/images/carnes/pulpaNegra.jpeg",
       "available": true,
       "variants": [
         {
           "id": "cecina-500g",
           "label": "½ Kilo",
           "weight": 500,
-          "precio_tienda": 90,
-          "precio_web": 100
+          "precio_tienda": 140,
+          "precio_web": 160
         },
         {
           "id": "cecina-1kg",
           "label": "1 Kilo",
           "weight": 1000,
-          "precio_tienda": 180,
-          "precio_web": 195
+          "precio_tienda": 280,
+          "precio_web": 300
         }
       ]
     },
@@ -111,7 +116,7 @@
       "categoryId": "carnes",
       "name": "Carne Enchilada",
       "description": "Carne marinada con chile rojo, lista para asar o freír.",
-      "image": "/images/enchilada.webp",
+      "image": "/images/carnes/enchilada.png",
       "available": true,
       "variants": [
         {
@@ -136,7 +141,7 @@
       "categoryId": "carnes",
       "name": "Bistec de Res",
       "description": "Bistec de res tierno, perfecto para asar o en salsa.",
-      "image": "/images/bistec.webp",
+      "image": "/images/carnes/cecinaObistec.png",
       "available": true,
       "variants": [
         {
@@ -161,7 +166,7 @@
       "categoryId": "carnes",
       "name": "Chuletas de Cerdo",
       "description": "Chuletas de cerdo frescas, perfectas para asar o freír.",
-      "image": "/images/chuletas.webp",
+      "image": "/images/carnes/chuleta.png",
       "available": true,
       "variants": [
         {
@@ -185,84 +190,241 @@
       "type": "variable",
       "categoryId": "bebidas",
       "name": "Coca-Cola 600 ml",
-      "description": "Refresco Coca-Cola de 600 ml en sus presentaciones más comunes.",
-      "image": "/images/coca600.webp",
+      "description": "Refresco Coca-Cola de 600 ml.",
+      "image": "/images/bebidas/cocacola600ml.png",
       "available": true,
       "variants": [
         {
           "id": "coca-600-normal",
           "label": "Normal",
           "precio_tienda": 23,
-          "precio_web": 25
+          "precio_web": 25,
+          "image": "/images/bebidas/cocacola600ml.png"
         },
         {
           "id": "coca-600-sin-azucar",
           "label": "Sin azúcar",
           "precio_tienda": 23,
-          "precio_web": 25
+          "precio_web": 25,
+          "image": "/images/bebidas/cocacolacero600ml.png"
         }
       ]
     },
     {
-      "id": "pepsi-600-001",
+      "id": "coca-familiar-001",
       "type": "variable",
       "categoryId": "bebidas",
-      "name": "Pepsi 600 ml",
-      "description": "Refresco Pepsi de 600 ml.",
-      "image": "/images/pepsi600.webp",
+      "name": "Coca-Cola Familiar",
+      "description": "Refresco Coca-Cola en presentación familiar.",
+      "image": "/images/bebidas/cocacola-familiar.png",
       "available": true,
       "variants": [
         {
-          "id": "pepsi-600-normal",
-          "label": "Normal",
-          "precio_tienda": 22,
-          "precio_web": 24
+          "id": "coca-1750-normal",
+          "label": "1.75 L",
+          "precio_tienda": 33,
+          "precio_web": 36,
+          "image": "/images/bebidas/coca1.75.webp"
         },
         {
-          "id": "pepsi-600-light",
-          "label": "Light",
-          "precio_tienda": 22,
-          "precio_web": 24
+          "id": "coca-2500-normal",
+          "label": "2.5 L",
+          "precio_tienda": 38,
+          "precio_web": 42,
+          "image": "/images/bebidas/coca2.5.webp"
+        },
+        {
+          "id": "coca-3000-normal",
+          "label": "3 L",
+          "precio_tienda": 43,
+          "precio_web": 47,
+          "image": "/images/bebidas/coca3.webp"
         }
       ]
     },
     {
-      "id": "agua-ciel-001",
+      "id": "sidral-600-001",
       "type": "simple",
       "categoryId": "bebidas",
-      "name": "Agua Ciel 1 L",
-      "description": "Agua purificada Ciel, botella de 1 litro.",
-      "image": "/images/agua-ciel.webp",
+      "name": "Sidral Mundet 600 ml",
+      "description": "Refresco Sidral Mundet de 600 ml.",
+      "image": "/images/bebidas/mundet.png",
       "available": true,
-      "precio_tienda": 14,
-      "precio_web": 16
+      "precio_tienda": 22,
+      "precio_web": 24
     },
     {
-      "id": "jumex-473-001",
+      "id": "fresca-001",
       "type": "variable",
       "categoryId": "bebidas",
-      "name": "Jumex 473 ml",
-      "description": "Jugo Jumex en presentación individual.",
-      "image": "/images/jumex.webp",
+      "name": "Fresca",
+      "description": "Refresco Fresca en distintas presentaciones.",
+      "image": "/images/bebidas/fresca600.webp",
       "available": true,
       "variants": [
         {
-          "id": "jumex-mango-473",
-          "label": "Mango",
-          "precio_tienda": 18,
-          "precio_web": 20
+          "id": "fresca-600",
+          "label": "600 ml",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/bebidas/fresca600.webp"
         },
         {
-          "id": "jumex-durazno-473",
-          "label": "Durazno",
-          "precio_tienda": 18,
-          "precio_web": 20
+          "id": "fresca-1500",
+          "label": "1.5 L",
+          "precio_tienda": 27,
+          "precio_web": 30,
+          "image": "/images/bebidas/fresca1.5.webp"
         },
         {
-          "id": "jumex-manzana-473",
+          "id": "fresca-2500",
+          "label": "2.5 L",
+          "precio_tienda": 35,
+          "precio_web": 39,
+          "image": "/images/bebidas/fresca2.5.webp"
+        }
+      ]
+    },
+    {
+      "id": "fanta-naranja-001",
+      "type": "variable",
+      "categoryId": "bebidas",
+      "name": "Fanta Naranja",
+      "description": "Refresco Fanta sabor naranja.",
+      "image": "/images/bebidas/fanta.png",
+      "available": true,
+      "variants": [
+        {
+          "id": "fanta-naranja-600",
+          "label": "600 ml",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/bebidas/fanta.png"
+        },
+        {
+          "id": "fanta-naranja-1500",
+          "label": "1.5 L",
+          "precio_tienda": 27,
+          "precio_web": 30,
+          "image": "/images/bebidas/fanta1.5.jpeg"
+        },
+        {
+          "id": "fanta-naranja-2500",
+          "label": "2.5 L",
+          "precio_tienda": 35,
+          "precio_web": 39,
+          "image": "/images/bebidas/fanta2.5.webp"
+        }
+      ]
+    },
+    {
+      "id": "fanta-fresa-600-001",
+      "type": "simple",
+      "categoryId": "bebidas",
+      "name": "Fanta Fresa 600 ml",
+      "description": "Refresco Fanta Fresa de 600 ml.",
+      "image": "/images/bebidas/fantaFresa.png",
+      "available": true,
+      "precio_tienda": 22,
+      "precio_web": 24
+    },
+    {
+      "id": "yoli-001",
+      "type": "variable",
+      "categoryId": "bebidas",
+      "name": "Yoli",
+      "description": "Refresco Yoli en distintas presentaciones.",
+      "image": "/images/bebidas/yoli600.webp",
+      "available": true,
+      "variants": [
+        {
+          "id": "yoli-600",
+          "label": "600 ml",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/bebidas/yoli600.webp"
+        },
+        {
+          "id": "yoli-1500",
+          "label": "1.5 L",
+          "precio_tienda": 27,
+          "precio_web": 30,
+          "image": "/images/bebidas/yoli1.5.webp"
+        },
+        {
+          "id": "yoli-2500",
+          "label": "2.5 L",
+          "precio_tienda": 35,
+          "precio_web": 39,
+          "image": "/images/bebidas/yoli2.5.webp"
+        }
+      ]
+    },
+    {
+      "id": "delaware-600-001",
+      "type": "simple",
+      "categoryId": "bebidas",
+      "name": "Delaware Punch 600 ml",
+      "description": "Refresco Delaware Punch de 600 ml.",
+      "image": "/images/bebidas/delaware.webp",
+      "available": true,
+      "precio_tienda": 22,
+      "precio_web": 24
+    },
+    {
+      "id": "del-valle-vidrio-001",
+      "type": "variable",
+      "categoryId": "bebidas",
+      "name": "Del Valle Vidrio",
+      "description": "Jugo Del Valle en presentación de vidrio.",
+      "image": "/images/bebidas/dVManzanaVidrio.webp",
+      "available": true,
+      "variants": [
+        {
+          "id": "delvalle-vidrio-manzana",
           "label": "Manzana",
-          "precio_tienda": 18,
-          "precio_web": 20
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/bebidas/dVManzanaVidrio.webp"
+        },
+        {
+          "id": "delvalle-vidrio-mango",
+          "label": "Mango",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/bebidas/vidrioMango.webp"
+        },
+        {
+          "id": "delvalle-vidrio-durazno",
+          "label": "Durazno",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/bebidas/vidrioDurazno.webp"
+        }
+      ]
+    },
+    {
+      "id": "del-valle-600-001",
+      "type": "variable",
+      "categoryId": "bebidas",
+      "name": "Del Valle 600 ml",
+      "description": "Jugo Del Valle en botella plástica.",
+      "image": "/images/delvalle600.webp",
+      "available": true,
+      "variants": [
+        {
+          "id": "delvalle-600-guayaba",
+          "label": "Guayaba",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/bebidas/delvalleGuayaba.webp"
+        },
+        {
+          "id": "delvalle-600-naranja",
+          "label": "Naranja",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/bebidas/delvalleNaranja.webp"
         }
       ]
     },
@@ -271,27 +433,33 @@
       "type": "variable",
       "categoryId": "bebidas",
       "name": "Boing 355 ml",
-      "description": "Bebida Boing en presentación de lata.",
-      "image": "/images/boing.webp",
+      "description": "Bebida Boing en lata.",
+      "image": "/images/bebidas/boings.jpg",
       "available": true,
       "variants": [
         {
-          "id": "boing-guayaba-355",
-          "label": "Guayaba",
-          "precio_tienda": 16,
-          "precio_web": 18
+          "id": "boing-manzana-355",
+          "label": "Manzana",
+          "precio_tienda": 20,
+          "precio_web": 22
+        },
+        {
+          "id": "boing-uva-355",
+          "label": "Uva",
+          "precio_tienda": 20,
+          "precio_web": 22
         },
         {
           "id": "boing-mango-355",
           "label": "Mango",
-          "precio_tienda": 16,
-          "precio_web": 18
+          "precio_tienda": 20,
+          "precio_web": 22
         },
         {
-          "id": "boing-tamarindo-355",
-          "label": "Tamarindo",
-          "precio_tienda": 16,
-          "precio_web": 18
+          "id": "boing-guayaba-355",
+          "label": "Guayaba",
+          "precio_tienda": 20,
+          "precio_web": 22
         }
       ]
     },
@@ -301,7 +469,7 @@
       "categoryId": "bebidas",
       "name": "Electrolit 625 ml",
       "description": "Suero hidratante Electrolit.",
-      "image": "/images/electrolit.webp",
+      "image": "/images/bebidas/electrolits.webp",
       "available": true,
       "variants": [
         {
@@ -315,8 +483,115 @@
           "label": "Fresa Kiwi",
           "precio_tienda": 30,
           "precio_web": 32
+        },
+        {
+          "id": "electrolit-uva",
+          "label": "Uva",
+          "precio_tienda": 30,
+          "precio_web": 32
         }
       ]
+    },
+    {
+      "id": "caribe-001",
+      "type": "variable",
+      "categoryId": "bebidas",
+      "name": "Caribe Cooler",
+      "description": "Bebida Caribe Cooler en distintos sabores.",
+      "image": "/images/bebidas/Caribes.jpg",
+      "available": true,
+      "variants": [
+        {
+          "id": "caribe-fresa",
+          "label": "Fresa",
+          "precio_tienda": 28,
+          "precio_web": 31
+        },
+        {
+          "id": "caribe-durazno",
+          "label": "Durazno",
+          "precio_tienda": 28,
+          "precio_web": 31
+        },
+        {
+          "id": "caribe-frutas",
+          "label": "Frutas",
+          "precio_tienda": 28,
+          "precio_web": 31
+        }
+      ]
+    },
+    {
+      "id": "carta-blanca-001",
+      "type": "variable",
+      "categoryId": "bebidas",
+      "name": "Cerveza Carta Blanca",
+      "description": "Cerveza Carta Blanca.",
+      "image": "/images/bebidas/cartablancaSix.webp",
+      "available": true,
+      "variants": [
+        {
+          "id": "carta-blanca-unidad",
+          "label": "Unidad",
+          "precio_tienda": 15,
+          "precio_web": 17,
+          "image": "/images/bebidas/unidadCartablanca.png"
+        },
+        {
+          "id": "carta-blanca-six",
+          "label": "Six",
+          "precio_tienda": 90,
+          "precio_web": 102,
+          "image": "/images/bebidas/cartablancaSix.webp"
+        }
+      ]
+    },
+    {
+      "id": "barrilito-001",
+      "type": "simple",
+      "categoryId": "bebidas",
+      "name": "Agual Ciel 600 ml",
+      "description": "Agua ciel de 600 ml.",
+      "image": "/images/bebidas/ciel600.webp",
+      "available": true,
+      "precio_tienda": 15,
+      "precio_web": 17
+    },
+    {
+      "id": "fuzetea-001",
+      "type": "variable",
+      "categoryId": "bebidas",
+      "name": "Fuze Tea",
+      "description": "Té frío Fuze Tea.",
+      "image": "/images/bebidas/fuzteaLimon.jpg",
+      "available": true,
+      "variants": [
+        {
+          "id": "fuzetea-limon",
+          "label": "Limón",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/bebidas/fuzteaLimon.jpg"
+        },
+        {
+          "id": "fuzetea-durazno",
+          "label": "Durazno",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/bebidas/fuzteaDurazno.webp"
+        }
+      ]
+    },
+    {
+      "id": "agua-ciel-001",
+      "type": "simple",
+      "categoryId": "bebidas",
+      "name": "Agua Ciel 1.2 L",
+      "description": "Agua purificada Ciel, botella de 1.2 litros.",
+      "image": "/images/bebidas/ciel1.2L.webp",
+      "available": true,
+      "precio_tienda": 14,
+      "precio_web": 16
     },
     {
       "id": "sabritas-001",
@@ -324,7 +599,7 @@
       "categoryId": "botanas",
       "name": "Sabritas",
       "description": "Papas Sabritas en distintos sabores.",
-      "image": "/images/sabritas.webp",
+      "image": "/images/botanas/sabritasPapas.webp",
       "available": true,
       "variants": [
         {
@@ -353,7 +628,7 @@
       "categoryId": "botanas",
       "name": "Doritos",
       "description": "Doritos en sabores clásicos.",
-      "image": "/images/doritos.webp",
+      "image": "/images/botanas/doritos.jpg",
       "available": true,
       "variants": [
         {
@@ -382,7 +657,7 @@
       "categoryId": "botanas",
       "name": "Ruffles",
       "description": "Papas Ruffles en distintos sabores.",
-      "image": "/images/ruffles.webp",
+      "image": "/images/botanas/ruffles.jpg",
       "available": true,
       "variants": [
         {
@@ -411,7 +686,7 @@
       "categoryId": "botanas",
       "name": "Cheetos",
       "description": "Botanas Cheetos en sus presentaciones más comunes.",
-      "image": "/images/cheetos.webp",
+      "image": "/images/botanas/chetos.png",
       "available": true,
       "variants": [
         {
@@ -440,7 +715,7 @@
       "categoryId": "botanas",
       "name": "Churrumais",
       "description": "Botana de maíz con chile y limón.",
-      "image": "/images/churrumais.webp",
+      "image": "/images/botanas/churro.webp",
       "available": true,
       "precio_tienda": 20,
       "precio_web": 22
@@ -451,7 +726,7 @@
       "categoryId": "botanas",
       "name": "Takis Fuego",
       "description": "Botana de maíz enrollado sabor chile y limón.",
-      "image": "/images/takis.webp",
+      "image": "/images/botanas/takis.jpg",
       "available": true,
       "precio_tienda": 20,
       "precio_web": 22
@@ -462,7 +737,7 @@
       "categoryId": "botanas",
       "name": "Chips Jalapeño",
       "description": "Papas Chips sabor jalapeño.",
-      "image": "/images/chips.webp",
+      "image": "/images/botanas/chips.jpeg",
       "available": true,
       "precio_tienda": 22,
       "precio_web": 24
@@ -473,7 +748,7 @@
       "categoryId": "galletas_y_dulces",
       "name": "Príncipe",
       "description": "Galletas Príncipe en varios sabores.",
-      "image": "/images/principe.webp",
+      "image": "/images/galletasYDulces/principes.jpeg",
       "available": true,
       "variants": [
         {
@@ -496,7 +771,7 @@
       "categoryId": "galletas_y_dulces",
       "name": "Triki Trakes",
       "description": "Galletas Triki Trakes Marinela.",
-      "image": "/images/triki-trakes.webp",
+      "image": "/images/galletasYDulces/triki.jpg",
       "available": true,
       "precio_tienda": 23,
       "precio_web": 25
@@ -507,7 +782,7 @@
       "categoryId": "galletas_y_dulces",
       "name": "Gansito",
       "description": "Pastelito Gansito Marinela.",
-      "image": "/images/gansito.webp",
+      "image": "/images/galletasYDulces/gansito.webp",
       "available": true,
       "precio_tienda": 18,
       "precio_web": 20
@@ -518,7 +793,7 @@
       "categoryId": "galletas_y_dulces",
       "name": "Barritas Marinela",
       "description": "Barritas rellenas en distintos sabores.",
-      "image": "/images/barritas.webp",
+      "image": "/images/galletasYDulces/barritas.png",
       "available": true,
       "variants": [
         {
@@ -541,7 +816,7 @@
       "categoryId": "galletas_y_dulces",
       "name": "Submarinos Marinela",
       "description": "Pastelitos Submarinos en distintos sabores.",
-      "image": "/images/submarinos.webp",
+      "image": "/images/galletasYDulces/submarinos.jpeg",
       "available": true,
       "variants": [
         {
@@ -564,7 +839,7 @@
       "categoryId": "galletas_y_dulces",
       "name": "Pastisetas",
       "description": "Galletas Pastisetas Marinela.",
-      "image": "/images/pastisetas.webp",
+      "image": "/images/galletasYDulces/pastizetas.jpeg",
       "available": true,
       "precio_tienda": 33,
       "precio_web": 36
@@ -609,10 +884,21 @@
       "categoryId": "lacteos",
       "name": "Leche Alpura 1 L",
       "description": "Leche Alpura entera de 1 litro.",
-      "image": "/images/leche-alpura.webp",
+      "image": "/images/lacteos/alpula1l.webp",
       "available": true,
       "precio_tienda": 30,
       "precio_web": 32
+    },
+    {
+      "id": "leche-nido-001",
+      "type": "simple",
+      "categoryId": "lacteos",
+      "name": "Leche Nido",
+      "description": "Leche en polvo Nido.",
+      "image": "/images/nido.webp",
+      "available": true,
+      "precio_tienda": 98,
+      "precio_web": 105
     },
     {
       "id": "yogurt-danone-220-001",
@@ -644,25 +930,81 @@
       ]
     },
     {
-      "id": "yogurt-lala-bebible-001",
+      "id": "yogurt-lala-225-001",
+      "type": "simple",
+      "categoryId": "lacteos",
+      "name": "Yogurt Lala Fresa 225 ml",
+      "description": "Yogurt Lala sabor fresa.",
+      "image": "/images/yogurt-lala225.webp",
+      "available": true,
+      "precio_tienda": 18,
+      "precio_web": 20
+    },
+    {
+      "id": "yogurt-lala-grande-001",
+      "type": "simple",
+      "categoryId": "lacteos",
+      "name": "Yogurt Lala Grande Fresa",
+      "description": "Yogurt Lala grande sabor fresa.",
+      "image": "/images/yogurt-lala-grande.webp",
+      "available": true,
+      "precio_tienda": 27,
+      "precio_web": 30
+    },
+    {
+      "id": "yogurt-nestle-001",
       "type": "variable",
       "categoryId": "lacteos",
-      "name": "Yogurt Lala Bebible",
-      "description": "Yogurt bebible Lala en distintos sabores.",
-      "image": "/images/yogurt-lala.webp",
+      "name": "Yogurt / Licuado Nestlé",
+      "description": "Yogurt o licuado Nestlé en distintos sabores.",
+      "image": "/images/yogurt-nestle.webp",
       "available": true,
       "variants": [
         {
-          "id": "lala-bebible-fresa",
-          "label": "Fresa",
+          "id": "nestle-fresa-moras",
+          "label": "Fresa Moras",
+          "precio_tienda": 27,
+          "precio_web": 30
+        },
+        {
+          "id": "nestle-platano-fresa",
+          "label": "Plátano Fresa",
+          "precio_tienda": 27,
+          "precio_web": 30
+        }
+      ]
+    },
+    {
+      "id": "activia-001",
+      "type": "simple",
+      "categoryId": "lacteos",
+      "name": "Activia Pasas",
+      "description": "Yogurt Activia sabor pasas.",
+      "image": "/images/activia.webp",
+      "available": true,
+      "precio_tienda": 18,
+      "precio_web": 20
+    },
+    {
+      "id": "gastro-001",
+      "type": "variable",
+      "categoryId": "lacteos",
+      "name": "Yogurt Gastro Natural",
+      "description": "Yogurt Gastro natural en distintos tamaños.",
+      "image": "/images/gastro.webp",
+      "available": true,
+      "variants": [
+        {
+          "id": "gastro-natural-chico",
+          "label": "Chico",
           "precio_tienda": 18,
           "precio_web": 20
         },
         {
-          "id": "lala-bebible-fresa-platano",
-          "label": "Fresa Plátano",
-          "precio_tienda": 18,
-          "precio_web": 20
+          "id": "gastro-natural-grande",
+          "label": "Grande",
+          "precio_tienda": 28,
+          "precio_web": 31
         }
       ]
     },
@@ -744,15 +1086,136 @@
       "precio_web": 20
     },
     {
-      "id": "shampoo-sedal-001",
+      "id": "salvo-liquido-001",
       "type": "simple",
       "categoryId": "farmacia_higiene",
-      "name": "Shampoo Sedal",
-      "description": "Shampoo Sedal para uso diario.",
-      "image": "/images/sedal.webp",
+      "name": "Jabón Salvo Líquido",
+      "description": "Jabón líquido para trastes Salvo.",
+      "image": "/images/salvo.webp",
       "available": true,
-      "precio_tienda": 38,
-      "precio_web": 42
+      "precio_tienda": 35,
+      "precio_web": 38
+    },
+    {
+      "id": "cloro-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Cloro",
+      "description": "Cloro para limpieza del hogar.",
+      "image": "/images/cloro.webp",
+      "available": true,
+      "precio_tienda": 22,
+      "precio_web": 25
+    },
+    {
+      "id": "ariel-500g-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Ariel en Polvo 500 g",
+      "description": "Detergente Ariel en polvo de 500 gramos.",
+      "image": "/images/ariel500.webp",
+      "available": true,
+      "precio_tienda": 28,
+      "precio_web": 31
+    },
+    {
+      "id": "prudence-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Condones Prudence",
+      "description": "Preservativos Prudence.",
+      "image": "/images/prudence.webp",
+      "available": true,
+      "precio_tienda": 48,
+      "precio_web": 53
+    },
+    {
+      "id": "sico-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Condones Sico",
+      "description": "Preservativos Sico.",
+      "image": "/images/sico.webp",
+      "available": true,
+      "precio_tienda": 55,
+      "precio_web": 60
+    },
+    {
+      "id": "m-condones-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Condones M",
+      "description": "Preservativos M.",
+      "image": "/images/m-condones.webp",
+      "available": true,
+      "precio_tienda": 42,
+      "precio_web": 46
+    },
+    {
+      "id": "economico-condones-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Condones Económicos",
+      "description": "Preservativos de opción económica.",
+      "image": "/images/condones-economicos.webp",
+      "available": true,
+      "precio_tienda": 35,
+      "precio_web": 39
+    },
+    {
+      "id": "panales-etapa1-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Pañales Etapa 1",
+      "description": "Pañales para bebé, paquete chico.",
+      "image": "/images/panales1.webp",
+      "available": true,
+      "precio_tienda": 78,
+      "precio_web": 86
+    },
+    {
+      "id": "panales-etapa2-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Pañales Etapa 2",
+      "description": "Pañales para bebé, paquete chico.",
+      "image": "/images/panales2.webp",
+      "available": true,
+      "precio_tienda": 85,
+      "precio_web": 94
+    },
+    {
+      "id": "panales-etapa3-001",
+      "type": "simple",
+      "categoryId": "farmacia_higiene",
+      "name": "Pañales Etapa 3",
+      "description": "Pañales para bebé, paquete mediano.",
+      "image": "/images/panales3.webp",
+      "available": true,
+      "precio_tienda": 92,
+      "precio_web": 102
+    },
+    {
+      "id": "tortillas-001",
+      "type": "simple",
+      "categoryId": "basicos_hogar",
+      "name": "Tortillas por kilo",
+      "description": "Tortillas frescas por kilo.",
+      "image": "/images/tortillas.webp",
+      "available": true,
+      "precio_tienda": 29,
+      "precio_web": 32
+    },
+    {
+      "id": "nido-basico-001",
+      "type": "simple",
+      "categoryId": "basicos_hogar",
+      "name": "Leche Nido",
+      "description": "Leche en polvo Nido.",
+      "image": "/images/nido.webp",
+      "available": true,
+      "precio_tienda": 98,
+      "precio_web": 105
     }
   ]
 }

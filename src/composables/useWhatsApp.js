@@ -15,22 +15,25 @@ const { whatsappNumber, storeName } = catalogData.meta
 export function useWhatsApp() {
   function sendOrder({ items, total, shippingCost, grandTotal, deliveryLabel, customer }) {
     const lines = [
-      `🛒 *Nuevo pedido – ${storeName}*`,
+      `*Nuevo pedido - ${storeName}*`,
       ``,
-      `👤 *Cliente:* ${customer.name}`,
-      `📱 *Teléfono:* ${customer.phone}`,
-      customer.address ? `📍 *Dirección:* ${customer.address}` : null,
-      customer.notes   ? `📝 *Notas:* ${customer.notes}`     : null,
+      `*Cliente:* ${customer.name}`,
+      `*Telefono:* ${customer.phone}`,
+      customer.address ? `*Direccion:* ${customer.address}` : null,
+      customer.notes   ? `*Notas:* ${customer.notes}`     : null,
       ``,
-      `──────────────────`,
+      `------------------------------`,
       `*Productos:*`,
-      ...items.map(i =>
-        `• ${i.name} (${i.variantLabel}) × ${i.qty}  →  $${(i.price * i.qty).toFixed(2)}`
-      ),
-      `──────────────────`,
-      `🏷️ *Subtotal:*   $${total.toFixed(2)}`,
-      `🚚 *Envío (${deliveryLabel}):*  ${shippingCost === 0 ? 'GRATIS 🎉' : `$${shippingCost.toFixed(2)}`}`,
-      `💰 *TOTAL:*      $${grandTotal.toFixed(2)}`,
+      ...items.map(i => {
+        // Normalizamos fracciones raras que causan problemas en encoding
+        const safeLabel = i.variantLabel ? i.variantLabel.replace('½', '1/2') : '';
+        return `- ${i.name} (${safeLabel}) x ${i.qty} - $${(i.price * i.qty).toFixed(2)}`;
+      }),
+      `------------------------------`,
+      ``,
+      `*Subtotal:* $${total.toFixed(2)}`,
+      `*Envio (${deliveryLabel}):* ${shippingCost === 0 ? 'GRATIS' : `$${shippingCost.toFixed(2)}`}`,
+      `*TOTAL:* $${grandTotal.toFixed(2)}`,
       ``
     ].filter(l => l !== null).join('\n')
 

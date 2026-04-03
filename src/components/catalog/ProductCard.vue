@@ -3,8 +3,8 @@
     <!-- Imagen del producto -->
     <div class="position-relative overflow-hidden" style="height: 200px; background: #f5f0eb;">
       <img
-        v-if="product.image"
-        :src="product.image"
+        v-if="displayImage"
+        :src="displayImage"
         :alt="product.name"
         class="w-100 h-100"
         style="object-fit: cover;"
@@ -13,7 +13,7 @@
       />
       <!-- Fallback cuando no hay imagen -->
       <div
-        v-if="!product.image || imgError"
+        v-if="!displayImage || imgError"
         class="w-100 h-100 d-flex align-items-center justify-content-center"
       >
         <span style="font-size: 4rem;">{{ categoryIcon }}</span>
@@ -42,9 +42,9 @@
         v-model="selectedVariantId"
       />
 
-      <!-- Precio para productos simples -->
-      <p v-if="product.type === 'simple'" class="fw-bold mb-0 text-brand">
-        ${{ product.precio_web?.toFixed(2) }}
+      <!-- Precio dinámico -->
+      <p class="fw-bold mb-0 text-brand fs-5">
+        ${{ displayPrice?.toFixed(2) }}
       </p>
 
       <!-- Botón agregar -->
@@ -60,7 +60,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed, watch } from 'vue'
 import ProductVariantSelector from './ProductVariantSelector.vue'
 import { useCart } from '@/composables/useCart.js'
 import catalogData from '@/data/products.json'
@@ -79,6 +79,29 @@ const categoryIcon = catalogData.categories.find(c => c.id === props.product.cat
 const selectedVariantId = ref(
   props.product.variants?.length ? props.product.variants[0].id : null
 )
+
+// Calcula el precio a mostrar en la tarjeta
+const displayPrice = computed(() => {
+  if (props.product.type === 'simple') return props.product.precio_web
+  const variant = props.product.variants?.find(v => v.id === selectedVariantId.value)
+  return variant?.precio_web ?? 0
+})
+
+// Calcula la imagen a mostrar en la tarjeta
+const displayImage = computed(() => {
+  if (props.product.type === 'variable' && props.product.variants?.length) {
+    const variant = props.product.variants.find(v => v.id === selectedVariantId.value)
+    if (variant?.image) {
+      return variant.image
+    }
+  }
+  return props.product.image
+})
+
+// Reinicia el error de imagen si la imagen cambia
+watch(displayImage, () => {
+  imgError.value = false
+})
 
 function handleAdd() {
   if (props.product.type === 'simple') {
