@@ -73,15 +73,15 @@
           "id": "chorizo-500g",
           "label": "½ Kilo",
           "weight": 500,
-          "precio_tienda": 65,
-          "precio_web": 75
+          "precio_tienda": 75,
+          "precio_web": 85
         },
         {
           "id": "chorizo-1kg",
           "label": "1 Kilo",
           "weight": 1000,
-          "precio_tienda": 130,
-          "precio_web": 140
+          "precio_tienda": 150,
+          "precio_web": 165
         }
       ]
     },
@@ -90,7 +90,7 @@
       "type": "variable",
       "categoryId": "carnes",
       "name": "Cecina",
-      "description": "Cecina enchilada o natural, corte fino tradicional.",
+      "description": "Cecina, corte fino tradicional.",
       "image": "/images/carnes/pulpaNegra.jpeg",
       "available": true,
       "variants": [
@@ -115,7 +115,7 @@
       "type": "variable",
       "categoryId": "carnes",
       "name": "Carne Enchilada",
-      "description": "Carne marinada con chile rojo, lista para asar o freír.",
+      "description": "Carne de cerdo enchilada, lista para freír.",
       "image": "/images/carnes/enchilada.png",
       "available": true,
       "variants": [
@@ -123,15 +123,15 @@
           "id": "enchilada-500g",
           "label": "½ Kilo",
           "weight": 500,
-          "precio_tienda": 85,
-          "precio_web": 95
+          "precio_tienda": 95,
+          "precio_web": 115
         },
         {
           "id": "enchilada-1kg",
           "label": "1 Kilo",
           "weight": 1000,
-          "precio_tienda": 170,
-          "precio_web": 185
+          "precio_tienda": 190,
+          "precio_web": 210
         }
       ]
     },
@@ -148,15 +148,15 @@
           "id": "bistec-500g",
           "label": "½ Kilo",
           "weight": 500,
-          "precio_tienda": 100,
-          "precio_web": 110
+          "precio_tienda": 130,
+          "precio_web": 150
         },
         {
           "id": "bistec-1kg",
           "label": "1 Kilo",
           "weight": 1000,
-          "precio_tienda": 200,
-          "precio_web": 215
+          "precio_tienda": 260,
+          "precio_web": 280
         }
       ]
     },
@@ -165,7 +165,7 @@
       "type": "variable",
       "categoryId": "carnes",
       "name": "Chuletas de Cerdo",
-      "description": "Chuletas de cerdo frescas, perfectas para asar o freír.",
+      "description": "Chuletas de res frescas, perfectas para asar o freír.",
       "image": "/images/carnes/chuleta.png",
       "available": true,
       "variants": [
@@ -173,15 +173,15 @@
           "id": "chuletas-500g",
           "label": "½ Kilo",
           "weight": 500,
-          "precio_tienda": 70,
-          "precio_web": 80
+          "precio_tienda": 130,
+          "precio_web": 150
         },
         {
           "id": "chuletas-1kg",
           "label": "1 Kilo",
           "weight": 1000,
-          "precio_tienda": 140,
-          "precio_web": 155
+          "precio_tienda": 260,
+          "precio_web": 280
         }
       ]
     },
@@ -202,8 +202,8 @@
           "image": "/images/bebidas/cocacola600ml.png"
         },
         {
-          "id": "coca-600-sin-azucar",
-          "label": "Sin azúcar",
+          "id": "coca-600-light",
+          "label": "Light",
           "precio_tienda": 23,
           "precio_web": 25,
           "image": "/images/bebidas/cocacolacero600ml.png"
@@ -222,22 +222,22 @@
         {
           "id": "coca-1750-normal",
           "label": "1.75 L",
-          "precio_tienda": 33,
-          "precio_web": 36,
+          "precio_tienda": 40,
+          "precio_web": 43,
           "image": "/images/bebidas/coca1.75.webp"
         },
         {
           "id": "coca-2500-normal",
           "label": "2.5 L",
-          "precio_tienda": 38,
-          "precio_web": 42,
+          "precio_tienda": 45,
+          "precio_web": 48,
           "image": "/images/bebidas/coca2.5.webp"
         },
         {
           "id": "coca-3000-normal",
           "label": "3 L",
-          "precio_tienda": 43,
-          "precio_web": 47,
+          "precio_tienda": 50,
+          "precio_web": 53,
           "image": "/images/bebidas/coca3.webp"
         }
       ]
@@ -272,15 +272,15 @@
         {
           "id": "fresca-1500",
           "label": "1.5 L",
-          "precio_tienda": 27,
-          "precio_web": 30,
+          "precio_tienda": 30,
+          "precio_web": 33,
           "image": "/images/bebidas/fresca1.5.webp"
         },
         {
           "id": "fresca-2500",
           "label": "2.5 L",
-          "precio_tienda": 35,
-          "precio_web": 39,
+          "precio_tienda": 38,
+          "precio_web": 41,
           "image": "/images/bebidas/fresca2.5.webp"
         }
       ]
@@ -304,15 +304,15 @@
         {
           "id": "fanta-naranja-1500",
           "label": "1.5 L",
-          "precio_tienda": 27,
-          "precio_web": 30,
+          "precio_tienda": 30,
+          "precio_web": 33,
           "image": "/images/bebidas/fanta1.5.jpeg"
         },
         {
           "id": "fanta-naranja-2500",
           "label": "2.5 L",
-          "precio_tienda": 35,
-          "precio_web": 39,
+          "precio_tienda": 38,
+          "precio_web": 41,
           "image": "/images/bebidas/fanta2.5.webp"
         }
       ]
@@ -347,15 +347,15 @@
         {
           "id": "yoli-1500",
           "label": "1.5 L",
-          "precio_tienda": 27,
-          "precio_web": 30,
+          "precio_tienda": 30,
+          "precio_web": 33,
           "image": "/images/bebidas/yoli1.5.webp"
         },
         {
           "id": "yoli-2500",
           "label": "2.5 L",
-          "precio_tienda": 35,
-          "precio_web": 39,
+          "precio_tienda": 38,
+          "precio_web": 41,
           "image": "/images/bebidas/yoli2.5.webp"
         }
       ]
@@ -474,21 +474,21 @@
       "variants": [
         {
           "id": "electrolit-toronja",
-          "label": "Toronja",
-          "precio_tienda": 30,
-          "precio_web": 32
+          "label": "Manzana",
+          "precio_tienda": 27,
+          "precio_web": 30
         },
         {
           "id": "electrolit-fresa-kiwi",
           "label": "Fresa Kiwi",
-          "precio_tienda": 30,
-          "precio_web": 32
+          "precio_tienda": 27,
+          "precio_web": 30
         },
         {
           "id": "electrolit-uva",
           "label": "Uva",
-          "precio_tienda": 30,
-          "precio_web": 32
+          "precio_tienda": 27,
+          "precio_web": 30
         }
       ]
     },
@@ -550,7 +550,7 @@
       "id": "barrilito-001",
       "type": "simple",
       "categoryId": "bebidas",
-      "name": "Agual Ciel 600 ml",
+      "name": "Agua Ciel 600 ml",
       "description": "Agua ciel de 600 ml.",
       "image": "/images/bebidas/ciel600.webp",
       "available": true,
@@ -590,8 +590,8 @@
       "description": "Agua purificada Ciel, botella de 1.2 litros.",
       "image": "/images/bebidas/ciel1.2L.webp",
       "available": true,
-      "precio_tienda": 14,
-      "precio_web": 16
+      "precio_tienda": 18,
+      "precio_web": 20
     },
     {
       "id": "sabritas-001",
