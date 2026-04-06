@@ -164,7 +164,7 @@
       "id": "chuletas-001",
       "type": "variable",
       "categoryId": "carnes",
-      "name": "Chuletas de Cerdo",
+      "name": "Chuletas de res",
       "description": "Chuletas de res frescas, perfectas para asar o freír.",
       "image": "/images/carnes/chuleta.png",
       "available": true,
