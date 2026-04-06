@@ -244,14 +244,28 @@
     },
     {
       "id": "sidral-600-001",
-      "type": "simple",
+      "type": "variable",
       "categoryId": "bebidas",
       "name": "Sidral Mundet 600 ml",
       "description": "Refresco Sidral Mundet de 600 ml.",
       "image": "/images/bebidas/mundet.png",
       "available": true,
-      "precio_tienda": 22,
-      "precio_web": 24
+      "variants": [
+        {
+          "id": "sidral-600-normal",
+          "label": "Normal",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/bebidas/mundet.png"
+        },
+        {
+          "id": "sidral-2500-normal",
+          "label": "Sidral Mundet 3 L",
+          "precio_tienda": 35,
+          "precio_web": 38,
+          "image": "/images/bebidas/mundet2.5.webp"
+        }
+      ]
     },
     {
       "id": "fresca-001",
@@ -361,15 +375,29 @@
       ]
     },
     {
-      "id": "delaware-600-001",
-      "type": "simple",
+      "id": "delaware-001",
+      "type": "variable",
       "categoryId": "bebidas",
-      "name": "Delaware Punch 600 ml",
-      "description": "Refresco Delaware Punch de 600 ml.",
+      "name": "Delaware Punch",
+      "description": "Refresco Delaware Punch en distintas presentaciones.",
       "image": "/images/bebidas/delaware.webp",
       "available": true,
-      "precio_tienda": 22,
-      "precio_web": 24
+      "variants": [
+        {
+          "id": "delaware-600",
+          "label": "600 ml",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/bebidas/delaware.webp"
+        },
+        {
+          "id": "delaware-2500",
+          "label": "2.5 L",
+          "precio_tienda": 38,
+          "precio_web": 41,
+          "image": "/images/bebidas/delaware2.5.webp"
+        }
+      ]
     },
     {
       "id": "del-valle-vidrio-001",
@@ -540,8 +568,8 @@
         {
           "id": "carta-blanca-six",
           "label": "Six",
-          "precio_tienda": 90,
-          "precio_web": 102,
+          "precio_tienda": 96,
+          "precio_web": 108,
           "image": "/images/bebidas/cartablancaSix.webp"
         }
       ]
@@ -648,6 +676,12 @@
           "label": "Incógnita",
           "precio_tienda": 22,
           "precio_web": 24
+        },
+        {
+          "id": "pizerolas",
+          "label": "Pizerolas",
+          "precio_tienda": 22,
+          "precio_web": 24
         }
       ]
     },
@@ -673,8 +707,8 @@
           "precio_web": 24
         },
         {
-          "id": "ruffles-jamon",
-          "label": "Jamón",
+          "id": "ruffles-flamin-hot",
+          "label": "Flamin' Hot",
           "precio_tienda": 22,
           "precio_web": 24
         }
@@ -711,36 +745,162 @@
     },
     {
       "id": "churrumais-001",
-      "type": "simple",
+      "type": "variable",
       "categoryId": "botanas",
       "name": "Churrumais",
       "description": "Botana de maíz con chile y limón.",
       "image": "/images/botanas/churro.webp",
       "available": true,
-      "precio_tienda": 20,
-      "precio_web": 22
+      "variants": [
+        {
+          "id": "churrumais-original",
+          "label": "Original",
+          "precio_tienda": 20,
+          "precio_web": 22
+        },
+        {
+          "id": "churrumais-chile-limon",
+          "label": "Chile Limón",
+          "precio_tienda": 20,
+          "precio_web": 22
+        }
+      ]
     },
     {
       "id": "takis-001",
-      "type": "simple",
+      "type": "variable",
       "categoryId": "botanas",
-      "name": "Takis Fuego",
-      "description": "Botana de maíz enrollado sabor chile y limón.",
+      "name": "Takis",
+      "description": "Botanas Takis en distintos sabores.",
       "image": "/images/botanas/takis.jpg",
       "available": true,
-      "precio_tienda": 20,
-      "precio_web": 22
+      "variants": [
+        {
+          "id": "takis-fuego",
+          "label": "Fuego",
+          "precio_tienda": 20,
+          "precio_web": 22
+        },
+        {
+          "id": "takis-azul",
+          "label": "Blue Heat",
+          "precio_tienda": 20,
+          "precio_web": 22
+        },
+        {
+          "id": "takis-guacamole",
+          "label": "Guacamole",
+          "precio_tienda": 20,
+          "precio_web": 22
+        },
+        {
+          "id": "takis-intense-nacho",
+          "label": "Salsa Brava",
+          "precio_tienda": 20,
+          "precio_web": 22
+        }
+      ]
     },
     {
       "id": "chips-001",
-      "type": "simple",
+      "type": "variable",
       "categoryId": "botanas",
-      "name": "Chips Jalapeño",
-      "description": "Papas Chips sabor jalapeño.",
+      "name": "Chips Barcel",
+      "description": "Papas Chips Barcel en distintos sabores.",
       "image": "/images/botanas/chips.jpeg",
       "available": true,
-      "precio_tienda": 22,
-      "precio_web": 24
+      "variants": [
+        {
+          "id": "chips-jalapeno",
+          "label": "Jalapeño",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/botanas/chips-jalapeno.jpeg"
+        },
+        {
+          "id": "chips-fuego",
+          "label": "Fuego",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/botanas/chips-fuego.jpeg"
+        },
+        {
+          "id": "chips-sal-limon",
+          "label": "Sal y Limón",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/botanas/chips-sal-limon.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "sabritas-big-mix-001",
+      "type": "variable",
+      "categoryId": "botanas",
+      "name": "Sabritas Big Mix",
+      "description": "Botana Sabritas Big Mix en distintos sabores.",
+      "image": "/images/botanas/bigmix-queso.webp",
+      "available": true,
+      "variants": [
+        {
+          "id": "bigmix-queso",
+          "label": "Queso",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/botanas/bigmix-queso.webp"
+        },
+        {
+          "id": "bigmix-flamin-hot",
+          "label": "Flamin Hot",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/botanas/bigmix-flamin-hot.webp"
+        },
+        {
+          "id": "bigmix-salsa-inglesa",
+          "label": "Salsa Inglesa",
+          "precio_tienda": 22,
+          "precio_web": 24,
+          "image": "/images/botanas/bigmix-salsa-inglesa.webp"
+        }
+      ]
+    },
+    {
+      "id": "hot-nuts-001",
+      "type": "variable",
+      "categoryId": "botanas",
+      "name": "Hot Nuts",
+      "description": "Cacahuates Hot Nuts en distintos sabores.",
+      "image": "/images/botanas/hotnuts-fuego.webp",
+      "available": true,
+      "variants": [
+        {
+          "id": "hotnuts-fuego-chico",
+          "label": "Fuego - Chico",
+          "precio_tienda": 20,
+          "precio_web": 22
+        },
+        {
+          "id": "hotnuts-fuego-grande",
+          "label": "Fuego - Grande",
+          "precio_tienda": 28,
+          "precio_web": 31
+        },
+        {
+          "id": "hotnuts-chile-limon-chico",
+          "label": "Chile y Limón - Chico",
+          "precio_tienda": 20,
+          "precio_web": 22,
+          "image": "/images/botanas/hotnuts-chile-limon.webp"
+        },
+        {
+          "id": "hotnuts-chile-limon-grande",
+          "label": "Chile y Limón - Grande",
+          "precio_tienda": 28,
+          "precio_web": 31,
+          "image": "/images/botanas/hotnuts-chile-limon.webp"
+        }
+      ]
     },
     {
       "id": "principe-001",
@@ -758,8 +918,8 @@
           "precio_web": 25
         },
         {
-          "id": "principe-vainilla",
-          "label": "Vainilla",
+          "id": "principe-avellana",
+          "label": "avellana",
           "precio_tienda": 23,
           "precio_web": 25
         }
@@ -857,7 +1017,7 @@
       "name": "Mazapán",
       "description": "Dulce tradicional de cacahuate.",
       "image": "/images/mazapan.webp",
-      "available": true,
+      "available": false,
       "precio_tienda": 8,
       "precio_web": 10
     },
@@ -868,7 +1028,7 @@
       "name": "Leche Lala 1 L",
       "description": "Leche Lala en distintas presentaciones.",
       "image": "/images/leche-lala.webp",
-      "available": true,
+      "available": false,
       "variants": [
         {
           "id": "leche-lala-entera",
@@ -890,7 +1050,7 @@
       "categoryId": "lacteos",
       "name": "Leche Alpura Deslactosada 1 L",
       "description": "Leche Alpura deslactosada de 1 litro.",
-      "image": "/images/lacteos/alpula1l.webp",
+      "image": "/images/lacteos/alpuraDeslactosada.webp",
       "available": true,
       "precio_tienda": 36,
       "precio_web": 39
@@ -1120,7 +1280,7 @@
       "name": "Condones Prudence",
       "description": "Preservativos Prudence.",
       "image": "/images/prudence.webp",
-      "available": true,
+      "available": false,
       "precio_tienda": 48,
       "precio_web": 53
     },
@@ -1129,11 +1289,11 @@
       "type": "simple",
       "categoryId": "farmacia_higiene",
       "name": "Condones Sico",
-      "description": "Preservativos Sico.",
+      "description": "Preservativos Sico Sensitive delgados.",
       "image": "/images/sico.webp",
       "available": true,
-      "precio_tienda": 55,
-      "precio_web": 60
+      "precio_tienda": 98,
+      "precio_web": 105
     },
     {
       "id": "m-condones-001",
@@ -1142,8 +1302,8 @@
       "name": "Condones M",
       "description": "Preservativos M.",
       "image": "/images/m-condones.webp",
-      "available": true,
-      "precio_tienda": 42,
+      "available": false,
+      "precio_tienda": 4,
       "precio_web": 46
     },
     {
@@ -1153,7 +1313,7 @@
       "name": "Condones Económicos",
       "description": "Preservativos de opción económica.",
       "image": "/images/condones-economicos.webp",
-      "available": true,
+      "available": false,
       "precio_tienda": 35,
       "precio_web": 39
     },
@@ -1164,7 +1324,7 @@
       "name": "Pañales Etapa 1",
       "description": "Pañales para bebé, paquete chico.",
       "image": "/images/panales1.webp",
-      "available": true,
+      "available": false,
       "precio_tienda": 78,
       "precio_web": 86
     },
@@ -1175,7 +1335,7 @@
       "name": "Pañales Etapa 2",
       "description": "Pañales para bebé, paquete chico.",
       "image": "/images/panales2.webp",
-      "available": true,
+      "available": false,
       "precio_tienda": 85,
       "precio_web": 94
     },
@@ -1186,7 +1346,7 @@
       "name": "Pañales Etapa 3",
       "description": "Pañales para bebé, paquete mediano.",
       "image": "/images/panales3.webp",
-      "available": true,
+      "available": false,
       "precio_tienda": 92,
       "precio_web": 102
     }
