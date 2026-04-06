@@ -515,7 +515,7 @@
         },
         {
           "id": "caribe-frutas",
-          "label": "Frutas",
+          "label": "Manzana verde",
           "precio_tienda": 28,
           "precio_web": 31
         }
@@ -830,6 +830,12 @@
           "label": "Vainilla",
           "precio_tienda": 26,
           "precio_web": 28
+        },
+        {
+          "id": "submarinos-fresa",
+          "label": "Fresa",
+          "precio_tienda": 26,
+          "precio_web": 28
         }
       ]
     },
@@ -882,23 +888,12 @@
       "id": "leche-alpura-001",
       "type": "simple",
       "categoryId": "lacteos",
-      "name": "Leche Alpura 1 L",
-      "description": "Leche Alpura entera de 1 litro.",
+      "name": "Leche Alpura Deslactosada 1 L",
+      "description": "Leche Alpura deslactosada de 1 litro.",
       "image": "/images/lacteos/alpula1l.webp",
       "available": true,
-      "precio_tienda": 30,
-      "precio_web": 32
-    },
-    {
-      "id": "leche-nido-001",
-      "type": "simple",
-      "categoryId": "lacteos",
-      "name": "Leche Nido",
-      "description": "Leche en polvo Nido.",
-      "image": "/images/nido.webp",
-      "available": true,
-      "precio_tienda": 98,
-      "precio_web": 105
+      "precio_tienda": 36,
+      "precio_web": 39
     },
     {
       "id": "yogurt-danone-220-001",
@@ -982,8 +977,8 @@
       "description": "Yogurt Activia sabor pasas.",
       "image": "/images/activia.webp",
       "available": true,
-      "precio_tienda": 18,
-      "precio_web": 20
+      "precio_tienda": 20,
+      "precio_web": 22
     },
     {
       "id": "gastro-001",
@@ -1012,23 +1007,23 @@
       "id": "yakult-001",
       "type": "simple",
       "categoryId": "lacteos",
-      "name": "Yakult 5 piezas",
-      "description": "Bebida fermentada Yakult de 5 piezas.",
+      "name": "Yakult 1 pieza",
+      "description": "Bebida fermentada Yakult 1 pieza.",
       "image": "/images/yakult.webp",
       "available": true,
-      "precio_tienda": 18,
-      "precio_web": 20
+      "precio_tienda": 12,
+      "precio_web": 15
     },
     {
       "id": "crema-lala-001",
       "type": "simple",
       "categoryId": "lacteos",
-      "name": "Crema Lala 250 ml",
+      "name": "Crema Lala 200 ml",
       "description": "Crema Lala ideal para acompañar tus comidas.",
       "image": "/images/crema-lala.webp",
       "available": true,
-      "precio_tienda": 17,
-      "precio_web": 19
+      "precio_tienda": 22,
+      "precio_web": 25
     },
     {
       "id": "papel-regio-001",
@@ -1194,28 +1189,6 @@
       "available": true,
       "precio_tienda": 92,
       "precio_web": 102
-    },
-    {
-      "id": "tortillas-001",
-      "type": "simple",
-      "categoryId": "basicos_hogar",
-      "name": "Tortillas por kilo",
-      "description": "Tortillas frescas por kilo.",
-      "image": "/images/tortillas.webp",
-      "available": true,
-      "precio_tienda": 29,
-      "precio_web": 32
-    },
-    {
-      "id": "nido-basico-001",
-      "type": "simple",
-      "categoryId": "basicos_hogar",
-      "name": "Leche Nido",
-      "description": "Leche en polvo Nido.",
-      "image": "/images/nido.webp",
-      "available": true,
-      "precio_tienda": 98,
-      "precio_web": 105
     }
   ]
 }
