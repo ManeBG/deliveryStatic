@@ -202,11 +202,18 @@
           "image": "/images/bebidas/cocacola600ml.png"
         },
         {
+          "id": "coca-lata-355",
+          "label": "Lata 355 ml",
+          "precio_tienda": 23,
+          "precio_web": 25,
+          "image": "/images/bebidas/cocaLata.jpg"
+        },
+        {
           "id": "coca-600-light",
           "label": "Light",
           "precio_tienda": 23,
           "precio_web": 25,
-          "image": "/images/bebidas/cocacolacero600ml.png"
+          "image": "/images/bebidas/cocaligt.webp"
         }
       ]
     },
@@ -263,7 +270,7 @@
           "label": "Sidral Mundet 3 L",
           "precio_tienda": 35,
           "precio_web": 38,
-          "image": "/images/bebidas/mundet2.5.webp"
+          "image": "/images/bebidas/mundet3l.webp"
         }
       ]
     },
@@ -395,7 +402,7 @@
           "label": "2.5 L",
           "precio_tienda": 38,
           "precio_web": 41,
-          "image": "/images/bebidas/delaware2.5.webp"
+          "image": "/images/bebidas/delaware2.5l.webp"
         }
       ]
     },
@@ -749,20 +756,21 @@
       "categoryId": "botanas",
       "name": "Churrumais",
       "description": "Botana de maíz con chile y limón.",
-      "image": "/images/botanas/churro.webp",
       "available": true,
       "variants": [
         {
           "id": "churrumais-original",
           "label": "Original",
           "precio_tienda": 20,
-          "precio_web": 22
+          "precio_web": 22,
+          "image": "/images/botanas/churro.webp"
         },
         {
-          "id": "churrumais-chile-limon",
-          "label": "Chile Limón",
+          "id": "churrumais-flamas",
+          "label": "Flamas",
           "precio_tienda": 20,
-          "precio_web": 22
+          "precio_web": 22,
+          "image": "/images/botanas/churroFlamas.webp"
         }
       ]
     },
@@ -815,21 +823,21 @@
           "label": "Jalapeño",
           "precio_tienda": 22,
           "precio_web": 24,
-          "image": "/images/botanas/chips-jalapeno.jpeg"
+          "image": "/images/botanas/chipsJalapeño.webp"
         },
         {
           "id": "chips-fuego",
           "label": "Fuego",
           "precio_tienda": 22,
           "precio_web": 24,
-          "image": "/images/botanas/chips-fuego.jpeg"
+          "image": "/images/botanas/chipsFuego.jpg"
         },
         {
           "id": "chips-sal-limon",
           "label": "Sal y Limón",
           "precio_tienda": 22,
           "precio_web": 24,
-          "image": "/images/botanas/chips-sal-limon.jpeg"
+          "image": "/images/botanas/chipsSal.webp"
         }
       ]
     },
@@ -847,21 +855,21 @@
           "label": "Queso",
           "precio_tienda": 22,
           "precio_web": 24,
-          "image": "/images/botanas/bigmix-queso.webp"
+          "image": "/images/botanas/bigmixQueso.webp"
         },
         {
-          "id": "bigmix-flamin-hot",
-          "label": "Flamin Hot",
+          "id": "bigmix-fuego",
+          "label": "Fuego",
           "precio_tienda": 22,
           "precio_web": 24,
-          "image": "/images/botanas/bigmix-flamin-hot.webp"
+          "image": "/images/botanas/bigmixFuego.webp"
         },
         {
-          "id": "bigmix-salsa-inglesa",
-          "label": "Salsa Inglesa",
+          "id": "bigmix-inglesa-limon",
+          "label": "Inglesa Limón",
           "precio_tienda": 22,
           "precio_web": 24,
-          "image": "/images/botanas/bigmix-salsa-inglesa.webp"
+          "image": "/images/botanas/bigmixInglesaLimon.webp"
         }
       ]
     },
@@ -871,7 +879,7 @@
       "categoryId": "botanas",
       "name": "Hot Nuts",
       "description": "Cacahuates Hot Nuts en distintos sabores.",
-      "image": "/images/botanas/hotnuts-fuego.webp",
+      "image": "/images/botanas/hotnuts.jpg",
       "available": true,
       "variants": [
         {
@@ -888,17 +896,15 @@
         },
         {
           "id": "hotnuts-chile-limon-chico",
-          "label": "Chile y Limón - Chico",
+          "label": "Original - Chico",
           "precio_tienda": 20,
-          "precio_web": 22,
-          "image": "/images/botanas/hotnuts-chile-limon.webp"
+          "precio_web": 22
         },
         {
           "id": "hotnuts-chile-limon-grande",
-          "label": "Chile y Limón - Grande",
+          "label": "Original - Grande",
           "precio_tienda": 28,
-          "precio_web": 31,
-          "image": "/images/botanas/hotnuts-chile-limon.webp"
+          "precio_web": 31
         }
       ]
     },
@@ -976,26 +982,28 @@
       "categoryId": "galletas_y_dulces",
       "name": "Submarinos Marinela",
       "description": "Pastelitos Submarinos en distintos sabores.",
-      "image": "/images/galletasYDulces/submarinos.jpeg",
       "available": true,
       "variants": [
         {
           "id": "submarinos-chocolate",
           "label": "Chocolate",
           "precio_tienda": 26,
-          "precio_web": 28
+          "precio_web": 28,
+          "image": "/images/galletasYDulces/submarinosChocolate.webp"
         },
         {
           "id": "submarinos-vainilla",
           "label": "Vainilla",
           "precio_tienda": 26,
-          "precio_web": 28
+          "precio_web": 28,
+          "image": "/images/galletasYDulces/submarinosVainilla.webp"
         },
         {
           "id": "submarinos-fresa",
           "label": "Fresa",
           "precio_tienda": 26,
-          "precio_web": 28
+          "precio_web": 28,
+          "image": "/images/galletasYDulces/submarinoFresa.webp"
         }
       ]
     },
@@ -1061,7 +1069,7 @@
       "categoryId": "lacteos",
       "name": "Yogurt Danone 220 ml",
       "description": "Yogurt Danone en distintos sabores.",
-      "image": "/images/yogurt-danone.webp",
+      "image": "/images/lacteos/youguresDanone.webp",
       "available": true,
       "variants": [
         {
@@ -1090,7 +1098,7 @@
       "categoryId": "lacteos",
       "name": "Yogurt Lala Fresa 225 ml",
       "description": "Yogurt Lala sabor fresa.",
-      "image": "/images/yogurt-lala225.webp",
+      "image": "/images/lacteos/lalaFresa.webp",
       "available": true,
       "precio_tienda": 18,
       "precio_web": 20
@@ -1101,7 +1109,7 @@
       "categoryId": "lacteos",
       "name": "Yogurt Lala Grande Fresa",
       "description": "Yogurt Lala grande sabor fresa.",
-      "image": "/images/yogurt-lala-grande.webp",
+      "image": "/images/lacteos/lalaGrande.webp",
       "available": true,
       "precio_tienda": 27,
       "precio_web": 30
@@ -1112,20 +1120,21 @@
       "categoryId": "lacteos",
       "name": "Yogurt / Licuado Nestlé",
       "description": "Yogurt o licuado Nestlé en distintos sabores.",
-      "image": "/images/yogurt-nestle.webp",
       "available": true,
       "variants": [
         {
           "id": "nestle-fresa-moras",
           "label": "Fresa Moras",
           "precio_tienda": 27,
-          "precio_web": 30
+          "precio_web": 30,
+          "image": "/images/lacteos/nestleFresaMoras.webp"
         },
         {
           "id": "nestle-platano-fresa",
           "label": "Plátano Fresa",
           "precio_tienda": 27,
-          "precio_web": 30
+          "precio_web": 30,
+          "image": "/images/lacteos/nestlePlatanoFresa.webp"
         }
       ]
     },
@@ -1135,33 +1144,21 @@
       "categoryId": "lacteos",
       "name": "Activia Pasas",
       "description": "Yogurt Activia sabor pasas.",
-      "image": "/images/activia.webp",
+      "image": "/images/lacteos/activiapasass.webp",
       "available": true,
       "precio_tienda": 20,
       "precio_web": 22
     },
     {
       "id": "gastro-001",
-      "type": "variable",
+      "type": "simple",
       "categoryId": "lacteos",
       "name": "Yogurt Gastro Natural",
       "description": "Yogurt Gastro natural en distintos tamaños.",
-      "image": "/images/gastro.webp",
+      "image": "/images/lacteos/gastro.webp",
       "available": true,
-      "variants": [
-        {
-          "id": "gastro-natural-chico",
-          "label": "Chico",
-          "precio_tienda": 18,
-          "precio_web": 20
-        },
-        {
-          "id": "gastro-natural-grande",
-          "label": "Grande",
-          "precio_tienda": 28,
-          "precio_web": 31
-        }
-      ]
+      "precio_tienda": 18,
+      "precio_web": 20
     },
     {
       "id": "yakult-001",
@@ -1169,7 +1166,7 @@
       "categoryId": "lacteos",
       "name": "Yakult 1 pieza",
       "description": "Bebida fermentada Yakult 1 pieza.",
-      "image": "/images/yakult.webp",
+      "image": "/images/lacteos/yakult.webp",
       "available": true,
       "precio_tienda": 12,
       "precio_web": 15
@@ -1180,7 +1177,7 @@
       "categoryId": "lacteos",
       "name": "Crema Lala 200 ml",
       "description": "Crema Lala ideal para acompañar tus comidas.",
-      "image": "/images/crema-lala.webp",
+      "image": "/images/lacteos/cremaChica.webp",
       "available": true,
       "precio_tienda": 22,
       "precio_web": 25
@@ -1192,7 +1189,7 @@
       "name": "Papel Higiénico Regio 4 rollos",
       "description": "Papel higiénico Regio doble hoja, paquete de 4 rollos.",
       "image": "/images/papel-regio.webp",
-      "available": true,
+      "available": false,
       "precio_tienda": 32,
       "precio_web": 35
     },
@@ -1204,8 +1201,8 @@
       "description": "Paracetamol 500 mg, caja básica.",
       "image": "/images/paracetamol.webp",
       "available": true,
-      "precio_tienda": 18,
-      "precio_web": 20
+      "precio_tienda": 30,
+      "precio_web": 35
     },
     {
       "id": "ibuprofeno-001",
@@ -1215,8 +1212,8 @@
       "description": "Ibuprofeno 400 mg, caja básica.",
       "image": "/images/ibuprofeno.webp",
       "available": true,
-      "precio_tienda": 22,
-      "precio_web": 24
+      "precio_tienda": 90,
+      "precio_web": 100
     },
     {
       "id": "pasta-colgate-001",
@@ -1224,7 +1221,7 @@
       "categoryId": "farmacia_higiene",
       "name": "Pasta Dental Colgate",
       "description": "Pasta dental Colgate para higiene diaria.",
-      "image": "/images/colgate.webp",
+      "image": "/images/farmaciaeHigiene/colgate.webp",
       "available": true,
       "precio_tienda": 24,
       "precio_web": 26
@@ -1235,7 +1232,7 @@
       "categoryId": "farmacia_higiene",
       "name": "Jabón Zote Blanco",
       "description": "Jabón Zote blanco para ropa y limpieza.",
-      "image": "/images/zote.webp",
+      "image": "/images/farmaciaeHigiene/zoteBlanco.webp",
       "available": true,
       "precio_tienda": 18,
       "precio_web": 20
@@ -1245,8 +1242,8 @@
       "type": "simple",
       "categoryId": "farmacia_higiene",
       "name": "Jabón Salvo Líquido",
-      "description": "Jabón líquido para trastes Salvo.",
-      "image": "/images/salvo.webp",
+      "description": "Jabón líquido 500 ml para trastes Salvo.",
+      "image": "/images/farmaciaeHigiene/salvo500ml.jpg",
       "available": true,
       "precio_tienda": 35,
       "precio_web": 38
@@ -1257,10 +1254,10 @@
       "categoryId": "farmacia_higiene",
       "name": "Cloro",
       "description": "Cloro para limpieza del hogar.",
-      "image": "/images/cloro.webp",
+      "image": "/images/farmaciaeHigiene/clorox.webp",
       "available": true,
-      "precio_tienda": 22,
-      "precio_web": 25
+      "precio_tienda": 160,
+      "precio_web": 170
     },
     {
       "id": "ariel-500g-001",
@@ -1290,7 +1287,7 @@
       "categoryId": "farmacia_higiene",
       "name": "Condones Sico",
       "description": "Preservativos Sico Sensitive delgados.",
-      "image": "/images/sico.webp",
+      "image": "/images/farmaciaeHigiene/sico.jpg",
       "available": true,
       "precio_tienda": 98,
       "precio_web": 105

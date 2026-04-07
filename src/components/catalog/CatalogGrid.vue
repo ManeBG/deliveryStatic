@@ -47,7 +47,7 @@ const productsByCategory = computed(() =>
   Object.fromEntries(
     catalogData.categories.map(cat => [
       cat.id,
-      catalogData.products.filter(p => p.categoryId === cat.id)
+      catalogData.products.filter(p => p.categoryId === cat.id && p.available !== false)
     ])
   )
 )
