@@ -39,9 +39,19 @@
       "icon": "🍿"
     },
     {
+      "id": "alcohol",
+      "label": "Alcohol",
+      "icon": "🍺"
+    },
+    {
       "id": "galletas_y_dulces",
       "label": "Galletas y Dulces",
       "icon": "🍬"
+    },
+    {
+      "id": "panaderia",
+      "label": "Panadería",
+      "icon": "🍞"
     },
     {
       "id": "lacteos",
@@ -530,7 +540,7 @@
     {
       "id": "caribe-001",
       "type": "variable",
-      "categoryId": "bebidas",
+      "categoryId": "alcohol",
       "name": "Caribe Cooler",
       "description": "Bebida Caribe Cooler en distintos sabores.",
       "image": "/images/bebidas/Caribes.jpg",
@@ -559,7 +569,7 @@
     {
       "id": "carta-blanca-001",
       "type": "variable",
-      "categoryId": "bebidas",
+      "categoryId": "alcohol",
       "name": "Cerveza Carta Blanca",
       "description": "Cerveza Carta Blanca.",
       "image": "/images/bebidas/cartablancaSix.webp",
@@ -1211,7 +1221,7 @@
       "name": "Ibuprofeno 400 mg",
       "description": "Ibuprofeno 400 mg, caja básica.",
       "image": "/images/ibuprofeno.webp",
-      "available": true,
+      "available": false,
       "precio_tienda": 90,
       "precio_web": 100
     },
@@ -1234,8 +1244,8 @@
       "description": "Jabón Zote blanco para ropa y limpieza.",
       "image": "/images/farmaciaeHigiene/zoteBlanco.webp",
       "available": true,
-      "precio_tienda": 18,
-      "precio_web": 20
+      "precio_tienda": 22,
+      "precio_web": 25
     },
     {
       "id": "salvo-liquido-001",
@@ -1253,11 +1263,11 @@
       "type": "simple",
       "categoryId": "farmacia_higiene",
       "name": "Cloro",
-      "description": "Cloro para limpieza del hogar.",
+      "description": "Cloro 500 ml para limpieza del hogar.",
       "image": "/images/farmaciaeHigiene/clorox.webp",
       "available": true,
-      "precio_tienda": 160,
-      "precio_web": 170
+      "precio_tienda": 17,
+      "precio_web": 20
     },
     {
       "id": "ariel-500g-001",
@@ -1265,7 +1275,7 @@
       "categoryId": "farmacia_higiene",
       "name": "Ariel en Polvo 500 g",
       "description": "Detergente Ariel en polvo de 500 gramos.",
-      "image": "/images/ariel500.webp",
+      "image": "/images/farmaciaeHigiene/ariel500.webp",
       "available": true,
       "precio_tienda": 28,
       "precio_web": 31
@@ -1346,6 +1356,241 @@
       "available": false,
       "precio_tienda": 92,
       "precio_web": 102
+    },
+    {
+      "id": "panque-bimbo-001",
+      "type": "variable",
+      "categoryId": "panaderia",
+      "name": "Panqué Bimbo",
+      "description": "Panqué Bimbo en distintos sabores.",
+      "available": true,
+      "variants": [
+        {
+          "id": "panque-bimbo-pasas",
+          "label": "Pasas",
+          "precio_tienda": 45,
+          "precio_web": 49,
+          "image": "/images/panaderia/panquePasas.webp"
+        },
+        {
+          "id": "panque-bimbo-nuez",
+          "label": "Nuez",
+          "precio_tienda": 45,
+          "precio_web": 49,
+          "image": "/images/panaderia/panqueNuez.jpeg"
+        },
+        {
+          "id": "panque-bimbo-marmol",
+          "label": "Marmol",
+          "precio_tienda": 45,
+          "precio_web": 49,
+          "image": "/images/panaderia/panqueMarmol.webp"
+        }
+      ]
+    },
+    {
+      "id": "nito-001",
+      "type": "simple",
+      "categoryId": "panaderia",
+      "name": "Nito",
+      "description": "Pastelito Nito Bimbo.",
+      "image": "/images/panaderia/nitoBimbo.webp",
+      "available": true,
+      "precio_tienda": 18,
+      "precio_web": 20
+    },
+    {
+      "id": "bran-frut-001",
+      "type": "variable",
+      "categoryId": "panaderia",
+      "name": "Bran Frut",
+      "description": "Panecillo Bran Frut en distintos sabores.",
+      "available": true,
+      "variants": [
+        {
+          "id": "bran-frut-fresa",
+          "label": "Fresa",
+          "precio_tienda": 18,
+          "precio_web": 20,
+          "image": "/images/panaderia/frutBimboFresa.webp"
+        },
+        {
+          "id": "bran-frut-pina",
+          "label": "Piña",
+          "precio_tienda": 18,
+          "precio_web": 20,
+          "image": "/images/panaderia/frutBimboPiña.webp"
+        }
+      ]
+    },
+    {
+      "id": "mantecadas-bimbo-001",
+      "type": "variable",
+      "categoryId": "panaderia",
+      "name": "Mantecadas Bimbo",
+      "description": "Paquete de mantecadas Bimbo.",
+      "available": true,
+      "variants": [
+        {
+          "id": "mantecadas-bimbo-vainilla",
+          "label": "Vainilla",
+          "precio_tienda": 32,
+          "precio_web": 35,
+          "image": "/images/panaderia/mantecadaVainilla.png"
+        },
+        {
+          "id": "mantecadas-bimbo-nuez",
+          "label": "Nuez",
+          "precio_tienda": 32,
+          "precio_web": 35,
+          "image": "/images/panaderia/mantecadaNuez.png"
+        }
+      ]
+    },
+    {
+      "id": "bimbunuelos-001",
+      "type": "simple",
+      "categoryId": "panaderia",
+      "name": "Bimbuñuelos",
+      "description": "Bimbuñuelos Bimbo.",
+      "image": "/images/panaderia/bimboñuelosBimbo.webp",
+      "available": true,
+      "precio_tienda": 23,
+      "precio_web": 25
+    },
+    {
+      "id": "roles-medianos-001",
+      "type": "variable",
+      "categoryId": "panaderia",
+      "name": "Roles dulces bimbo",
+      "description": "Roles dulces individuales.",
+      "available": true,
+      "variants": [
+        {
+          "id": "roles-individuales-canela",
+          "label": "Individuales",
+          "precio_tienda": 25,
+          "precio_web": 28,
+          "image": "/images/panaderia/rolesIndividuales.webp"
+        },
+        {
+          "id": "roles-familiares",
+          "label": "Familiares",
+          "precio_tienda": 45,
+          "precio_web": 49,
+          "image": "/images/panaderia/rolesFamiliares.webp"
+        }
+      ]
+    },
+    {
+      "id": "pan-tostado-bimbo-001",
+      "type": "simple",
+      "categoryId": "panaderia",
+      "name": "Pan tostado Bimbo",
+      "description": "Pan tostado Bimbo.",
+      "image": "/images/panaderia/tostadoBimbo.webp",
+      "available": true,
+      "precio_tienda": 45,
+      "precio_web": 49
+    },
+    {
+      "id": "kinder-delice-001",
+      "type": "simple",
+      "categoryId": "galletas_y_dulces",
+      "name": "Kinder Delice",
+      "description": "Pastelito Kinder Delice.",
+      "image": "/images/galletasYDulces/kinderDelice.webp",
+      "available": true,
+      "precio_tienda": 18,
+      "precio_web": 20
+    },
+    {
+      "id": "lechuguilla-001",
+      "type": "simple",
+      "categoryId": "bebidas",
+      "name": "Lechuguilla",
+      "description": "Lechuguilla artesanal.",
+      "image": "/images/bebidas/lechuguillas.jpeg",
+      "available": true,
+      "precio_tienda": 13,
+      "precio_web": 15
+    },
+    {
+      "id": "corona-355-001",
+      "type": "simple",
+      "categoryId": "alcohol",
+      "name": "Corona 355 ml",
+      "description": "Cerveza Corona botella 355 ml. Venta solo a mayores de edad.",
+      "image": "/images/alcohol/corona-355.jpg",
+      "available": false,
+      "precio_tienda": 0,
+      "precio_web": 0
+    },
+    {
+      "id": "victoria-355-001",
+      "type": "simple",
+      "categoryId": "alcohol",
+      "name": "Victoria 355 ml",
+      "description": "Cerveza Victoria botella 355 ml. Venta solo a mayores de edad.",
+      "image": "/images/alcohol/victoria-355.jpg",
+      "available": false,
+      "precio_tienda": 0,
+      "precio_web": 0
+    },
+    {
+      "id": "corona-caguama-001",
+      "type": "simple",
+      "categoryId": "alcohol",
+      "name": "Corona Caguama",
+      "description": "Cerveza Corona caguama. Venta solo a mayores de edad.",
+      "image": "/images/alcohol/corona-caguama.jpg",
+      "available": false,
+      "precio_tienda": 0,
+      "precio_web": 0
+    },
+    {
+      "id": "victoria-caguama-001",
+      "type": "simple",
+      "categoryId": "alcohol",
+      "name": "Victoria Caguama",
+      "description": "Cerveza Victoria caguama. Venta solo a mayores de edad.",
+      "image": "/images/alcohol/victoria-caguama.jpg",
+      "available": false,
+      "precio_tienda": 0,
+      "precio_web": 0
+    },
+    {
+      "id": "six-corona-001",
+      "type": "simple",
+      "categoryId": "alcohol",
+      "name": "Six Corona",
+      "description": "Six pack Corona. Venta solo a mayores de edad.",
+      "image": "/images/alcohol/six-corona.jpg",
+      "available": false,
+      "precio_tienda": 0,
+      "precio_web": 0
+    },
+    {
+      "id": "six-victoria-001",
+      "type": "simple",
+      "categoryId": "alcohol",
+      "name": "Six Victoria",
+      "description": "Six pack Victoria. Venta solo a mayores de edad.",
+      "image": "/images/alcohol/six-victoria.jpg",
+      "available": false,
+      "precio_tienda": 0,
+      "precio_web": 0
+    },
+    {
+      "id": "caribe-barrilito-001",
+      "type": "simple",
+      "categoryId": "alcohol",
+      "name": "Caribe Barrilito",
+      "description": "Cerveza Caribe en barrilito. Venta solo a mayores de edad.",
+      "image": "/images/alcohol/caribe-barrilito.jpg",
+      "available": false,
+      "precio_tienda": 0,
+      "precio_web": 0
     }
   ]
 }
