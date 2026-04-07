@@ -1,15 +1,58 @@
 <template>
+  <!-- Launch Announcement Banner -->
+  <div class="bg-warning text-dark text-center py-2 px-3 small fw-bold">
+    🎉 ¡Nuevo! Ahora ya puedes hacer tu pedido en línea desde tu celular.
+  </div>
+
   <!-- Hero Banner -->
-  <div class="py-4 mb-3 text-center text-white"
+  <div class="py-5 mb-4 text-center text-white position-relative overflow-hidden"
     style="background: linear-gradient(135deg, var(--mg-red) 0%, var(--mg-red-dark) 100%);">
-    <div class="container">
-      <h1 class="mb-1 fw-bold" style="font-family: var(--mg-font-title);">Miscelánea García</h1>
-      <p class="mb-0 opacity-75">Atoyac de Álvarez, Guerrero</p>
+    <div class="container px-3 position-relative z-1">
+      <h1 class="display-5 fw-bold mb-3" style="font-family: var(--mg-font-title);">
+        Miscelánea García
+      </h1>
+      <p class="lead mb-4 mx-auto fw-medium" style="max-width: 600px; opacity: 0.95;">
+        Pide carnes, bebidas, botanas y más desde tu celular. <br class="d-none d-md-block"> 
+        Recoge en tienda o recibe a domicilio en Atoyac.
+      </p>
+      
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+        <button class="btn btn-light btn-lg fw-bold px-4 shadow-sm" @click="scrollToCatalog">
+          🍽️ Pedir ahora
+        </button>
+        <button class="btn btn-outline-light btn-lg px-4 fw-medium" @click="scrollToHowToOrder">
+          ¿Cómo funciona?
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Benefits Section -->
+  <div class="container mb-5">
+    <div class="row g-2 justify-content-center text-center">
+      <div class="col-12 col-md-4">
+        <div class="py-2 px-3 bg-light border rounded-3 h-100 d-flex align-items-center justify-content-center gap-2">
+          <span class="fs-4">🛵</span>
+          <span class="fw-semibold small text-muted text-uppercase" style="letter-spacing: 0.5px;">Entrega a domicilio</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="py-2 px-3 bg-light border rounded-3 h-100 d-flex align-items-center justify-content-center gap-2">
+          <span class="fs-4">🏪</span>
+          <span class="fw-semibold small text-muted text-uppercase" style="letter-spacing: 0.5px;">Recoge en tienda</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="py-2 px-3 bg-light border rounded-3 h-100 d-flex align-items-center justify-content-center gap-2">
+          <span class="fs-4">📱</span>
+          <span class="fw-semibold small text-muted text-uppercase" style="letter-spacing: 0.5px;">Fácil por WhatsApp</span>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Barra de filtros por categoría -->
-  <div class="filter-bar-wrapper bg-white border-bottom sticky-top" style="z-index: 100;">
+  <div id="catalogo" class="filter-bar-wrapper bg-white border-bottom sticky-top" style="z-index: 100; scroll-margin-top: 20px;">
     <div class="container">
       <div class="filter-bar d-flex gap-2 py-2 overflow-auto">
         <!-- Ver todo -->
@@ -47,40 +90,42 @@
   </div>
 
   <!-- ===== Cómo pedir ===== -->
-  <div class="how-to-order py-5 border-top">
-    <div class="container">
-      <h2 class="h5 fw-bold text-center mb-4">¿Cómo pedir?</h2>
+  <div id="como-pedir" class="how-to-order py-5 border-top" style="scroll-margin-top: 70px;">
+    <div class="container px-3">
+      <h2 class="h3 fw-bold text-center mb-2">¿Cómo pedir?</h2>
+      <p class="text-center text-muted mb-4">Es muy fácil y rápido. ¡Sin registros complicados!</p>
+      
       <div class="row g-3 justify-content-center text-center">
 
         <div class="col-6 col-md-3">
-          <div class="step-card p-3 rounded-3 h-100">
-            <div class="step-icon mb-2">🛒</div>
-            <div class="step-number small text-muted fw-semibold mb-1">Paso 1</div>
-            <p class="small fw-semibold mb-0">Agrega productos al carrito</p>
+          <div class="step-card p-3 p-md-4 rounded-4 shadow-sm h-100 bg-white">
+            <div class="step-icon fs-1 mb-2">🛒</div>
+            <div class="step-number text-primary fw-bold text-uppercase mb-1" style="font-size: 0.75rem; letter-spacing: 1px;">Paso 1</div>
+            <p class="small fw-semibold mb-0 text-dark">Agrega productos</p>
           </div>
         </div>
 
         <div class="col-6 col-md-3">
-          <div class="step-card p-3 rounded-3 h-100">
-            <div class="step-icon mb-2">📋</div>
-            <div class="step-number small text-muted fw-semibold mb-1">Paso 2</div>
-            <p class="small fw-semibold mb-0">Completa tus datos</p>
+          <div class="step-card p-3 p-md-4 rounded-4 shadow-sm h-100 bg-white">
+            <div class="step-icon fs-1 mb-2">📋</div>
+            <div class="step-number text-primary fw-bold text-uppercase mb-1" style="font-size: 0.75rem; letter-spacing: 1px;">Paso 2</div>
+            <p class="small fw-semibold mb-0 text-dark">Completa tus datos</p>
           </div>
         </div>
 
         <div class="col-6 col-md-3">
-          <div class="step-card p-3 rounded-3 h-100">
-            <div class="step-icon mb-2">💬</div>
-            <div class="step-number small text-muted fw-semibold mb-1">Paso 3</div>
-            <p class="small fw-semibold mb-0">Confirma por WhatsApp</p>
+          <div class="step-card p-3 p-md-4 rounded-4 shadow-sm h-100 bg-white">
+            <div class="step-icon fs-1 mb-2">💬</div>
+            <div class="step-number text-primary fw-bold text-uppercase mb-1" style="font-size: 0.75rem; letter-spacing: 1px;">Paso 3</div>
+            <p class="small fw-semibold mb-0 text-dark">Lanza tu WhatsApp</p>
           </div>
         </div>
 
         <div class="col-6 col-md-3">
-          <div class="step-card p-3 rounded-3 h-100">
-            <div class="step-icon mb-2">🏠</div>
-            <div class="step-number small text-muted fw-semibold mb-1">Paso 4</div>
-            <p class="small fw-semibold mb-0">Recibe en casa o recoge en tienda</p>
+          <div class="step-card p-3 p-md-4 rounded-4 shadow-sm h-100 bg-white">
+            <div class="step-icon fs-1 mb-2">🏠</div>
+            <div class="step-number text-primary fw-bold text-uppercase mb-1" style="font-size: 0.75rem; letter-spacing: 1px;">Paso 4</div>
+            <p class="small fw-semibold mb-0 text-dark">Recibe o recoge</p>
           </div>
         </div>
 
@@ -201,6 +246,14 @@ const productCountByCategory = computed(() =>
     categories.map(cat => [cat.id, products.filter(p => p.categoryId === cat.id).length])
   )
 )
+
+const scrollToCatalog = () => {
+  document.getElementById('catalogo')?.scrollIntoView({ behavior: 'smooth' })
+}
+
+const scrollToHowToOrder = () => {
+  document.getElementById('como-pedir')?.scrollIntoView({ behavior: 'smooth' })
+}
 </script>
 
 <style scoped>
@@ -223,16 +276,14 @@ const productCountByCategory = computed(() =>
 
 /* Tarjetas de pasos "Cómo pedir" */
 .step-card {
-  background: #fff8f5;
-  border: 1px solid #f5e0da;
+  border: 1px solid rgba(0,0,0,0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .step-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08) !important;
 }
 .step-icon {
-  font-size: 2rem;
   line-height: 1;
 }
 </style>
