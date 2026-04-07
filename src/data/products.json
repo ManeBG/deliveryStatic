@@ -5,8 +5,8 @@
     "city": "Atoyac de Álvarez, Guerrero",
     "currency": "MXN",
     "whatsappNumber": "527421350819",
-    "minimumOrder": 100,
-    "freeShippingThreshold": 320,
+    "minimumOrder": 80,
+    "freeShippingThreshold": 280,
     "deliveryOptions": {
       "pickup": {
         "label": "Recoger en tienda",
